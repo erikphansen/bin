@@ -39,12 +39,3 @@ BCYAN='\e[46m'
 BWHITE='\e[47m'
 
 PS1="\n\u:\w \[$ECYAN\]\$(vcprompt)\[$NO_COLOR\] \n→ "
-# PS1="\n\u:\w \[$ECYAN\]\[$NO_COLOR\] \n→ "
-
-# old prompt, before Friday, August 24, 2012:
-# PS1="\w \[\033[1;36m\]\$(parse_git_branch)\[\033[0m\]\$ "
-
-# prompt from Advanced Command Line from Peepcode
-# <user>:<current_directory>(git_branch) >
-# Note that the git branch is given a special color
-# PS1="\n\u:\w \[$EBLACK\]\$(vcprompt)\[$NO_COLOR\] \n→ "
