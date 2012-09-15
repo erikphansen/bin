@@ -6,6 +6,8 @@ export PATH=$PATH:~/bin
 # Git tab completion via <https://sites.google.com/a/tellapart.com/eng/developer-info/git?pli=1#TOC-Hints-Tricks>
 source /usr/local/git/contrib/completion/git-completion.bash
 # Add RVM to PATH for scripting
-PATH=$PATH:$HOME/.rvm/bin
+# PATH=$PATH:$HOME/.rvm/bin
 # Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+# enable tab completion for rvm
+[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
