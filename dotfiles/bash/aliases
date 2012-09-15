@@ -1,4 +1,5 @@
 alias lsa='ls -hal'
+alias ta='cd ~/tellapart'
 
 # git aliases
 alias gst='git status'
