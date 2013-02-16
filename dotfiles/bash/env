@@ -1,7 +1,7 @@
 export LANG=en_US.UTF-8       # Added so I can generate Octopress blogs from Diet Coda
 export LC_ALL=en_US.UTF-8     # Added so I can generate Octopress blogs from Diet Coda
-export EDITOR="mate -w"
-export PATH=$PATH:~/Dropbox/bin
+export EDITOR="subl -w"
+export PATH=$PATH:~/Dropbox/bin:/Developer/SDKs/flex_sdk_4/
 
 # Git tab completion via <https://sites.google.com/a/tellapart.com/eng/developer-info/git?pli=1#TOC-Hints-Tricks>
 source /usr/local/git/contrib/completion/git-completion.bash
