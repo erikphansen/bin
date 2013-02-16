@@ -1,6 +1,21 @@
+# 
 alias lsa='ls -hal'
 alias ta='cd ~/tellapart'
 alias db='cd ~/Dropbox'
+
+# Utility
+alias reload='source ~/Dropbox/bin/dotfiles/bash/aliases'
+alias ea='subl -w ~/Dropbox/bin/dotfiles/bash/aliases && reload' # Edit aliases
+alias ee="subl ~/Dropbox/bin/dotfiles/bash/env"
+
+# cd to the path of the front Finder window
+cdf()
+{
+	target=`osascript -e 'tell application "Finder" to get POSIX path of (target of front Finder window as text)'`
+	cd "$target"
+}
+# open current path in Finder
+alias f='open -a Finder ./'
 
 # git aliases
 alias gst='git status'
