@@ -32,7 +32,7 @@ cdf() {
 alias f='open -a Finder ./'
 
 # git aliases
-alias gst='git status'
+alias g='git status'
 alias gl='git pull'
 alias gf='git fetch'
 alias gp='git push'
