@@ -6,10 +6,14 @@ alias mxmlc='/Developer/SDKs/flex_sdk_4/bin/mxmlc'
 alias fcsh='/Developer/SDKs/flex_sdk_4/bin/fcsh'
 
 # Utility
+alias e='subl -w'
 alias src='source ~/.bashrc'
 alias ea='subl -w ~/Dropbox/bin/dotfiles/bash/aliases && src' # Edit aliases
 alias ee="subl ~/Dropbox/bin/dotfiles/bash/env"
 alias ax="chmod a+x"
+alias cd..="cd .."
+alias cd...="cd ../../"
+alias cd....="cd ../../../"
 
 ###
 # The function and alias below are from
@@ -40,6 +44,7 @@ alias gba='git branch -a'
 alias gco='git checkout'
 alias grom='git rebase origin/master'
 alias gfr='gf; grom'
+alias gdt='git difftool'
 # Remove git from a project
 alias ungit="find . -name '.git' -exec rm -rf {} \;"
 # Remove svn from a projects
@@ -66,7 +71,7 @@ alias he="history -a" # export history
 alias hi="history -n" # import history
 
 # Get your current public IP
-alias ip="curl icanhazip.com"
+alias ip="curl ipv4.icanhazip.com && curl ipv6.icanhazip.com"
 
 # ls better
 alias la="ls -aF"
