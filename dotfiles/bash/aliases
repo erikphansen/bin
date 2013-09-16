@@ -14,6 +14,10 @@ alias ax="chmod a+x"
 alias cd..="cd .."
 alias cd...="cd ../../"
 alias cd....="cd ../../../"
+newdir() {
+    mkdir $1;
+    cd $1
+}
 
 ###
 # The function and alias below are from
@@ -36,7 +40,8 @@ alias g='git status'
 alias gl='git pull'
 alias gf='git fetch'
 alias gp='git push'
-alias gd='git diff | mate'
+alias gd='git diff | subl'
+alias gdt='git difftool'
 alias gc='git commit -v'
 alias gca='git commit -v -a'
 alias gb='git branch'
@@ -44,7 +49,6 @@ alias gba='git branch -a'
 alias gco='git checkout'
 alias grom='git rebase origin/master'
 alias gfr='gf; grom'
-alias gdt='git difftool'
 # Remove git from a project
 alias ungit="find . -name '.git' -exec rm -rf {} \;"
 # Remove svn from a projects
