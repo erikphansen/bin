@@ -1,13 +1,11 @@
 export LANG=en_US.UTF-8       # Added so I can generate Octopress blogs from Diet Coda
 export LC_ALL=en_US.UTF-8     # Added so I can generate Octopress blogs from Diet Coda
 export EDITOR="subl -w"
-export PATH=$PATH:~/Dropbox/bin
+export PATH=/usr/local/bin:$PATH:~/Dropbox/bin
+
+# rbenv installed via homebrew:
+export RBENV_ROOT=/usr/local/var/rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Git tab completion via <https://sites.google.com/a/tellapart.com/eng/developer-info/git?pli=1#TOC-Hints-Tricks>
 source /usr/local/git/contrib/completion/git-completion.bash
-# Add RVM to PATH for scripting
-# PATH=$PATH:$HOME/.rvm/bin
-# Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-# enable tab completion for rvm
-[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
