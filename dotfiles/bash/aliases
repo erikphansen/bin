@@ -2,6 +2,8 @@
 alias lsa='ls -hal'
 alias ta='cd ~/tellapart'
 alias db='cd ~/Dropbox'
+alias mxmlc='/Developer/SDKs/flex_sdk_4/bin/mxmlc'
+alias fcsh='/Developer/SDKs/flex_sdk_4/bin/fcsh'
 
 # Utility
 alias bt='buildtemplate'
