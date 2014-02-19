@@ -3,9 +3,5 @@ export LC_ALL=en_US.UTF-8     # Added so I can generate Octopress blogs from Die
 export EDITOR="mate -w"
 export PATH=/usr/local/bin:$PATH:~/Dropbox/bin
 
-# rbenv installed via homebrew:
-export RBENV_ROOT=/usr/local/var/rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
 # Git tab completion via <https://sites.google.com/a/tellapart.com/eng/developer-info/git?pli=1#TOC-Hints-Tricks>
 source /usr/local/git/contrib/completion/git-completion.bash
