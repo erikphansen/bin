@@ -10,8 +10,8 @@ alias wifi='networksetup -setairportpower en0'
 alias bt='buildtemplate'
 alias e='subl -w'
 alias src='source ~/.bashrc'
-alias ea='subl -w ~/Dropbox/bin/dotfiles/bash/aliases && src' # Edit aliases
-alias ee='subl -w ~/Dropbox/bin/dotfiles/bash/env && src'
+alias ea='mate -w ~/Dropbox/bin/dotfiles/bash/aliases && src' # Edit aliases
+alias ee='mate -w ~/Dropbox/bin/dotfiles/bash/env && src'
 alias ax="chmod a+x"
 
 # Allow use of 'cd ...' to cd up 2 levels, 'cd ....' up 3, etc. (like 4NT/4DOS)
