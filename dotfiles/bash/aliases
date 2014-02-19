@@ -4,6 +4,7 @@ alias ta='cd ~/tellapart'
 alias db='cd ~/Dropbox'
 alias mxmlc='/Developer/SDKs/flex_sdk_4/bin/mxmlc'
 alias fcsh='/Developer/SDKs/flex_sdk_4/bin/fcsh'
+alias wifi='networksetup -setairportpower en0'
 
 # Utility
 alias bt='buildtemplate'
