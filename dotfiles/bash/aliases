@@ -5,6 +5,7 @@ alias db='cd ~/Dropbox'
 alias mxmlc='/Developer/SDKs/flex_sdk_4/bin/mxmlc'
 alias fcsh='/Developer/SDKs/flex_sdk_4/bin/fcsh'
 alias wifi='networksetup -setairportpower en0'
+alias refreshfinder='sudo find / -name .DS_Store -delete; killall Finder'
 
 # Utility
 alias bt='buildtemplate'
