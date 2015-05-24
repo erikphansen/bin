@@ -17,5 +17,4 @@ FWIW, this `bin` dir lives locally in my home folder. The contents of my `~/.bas
         source ~/.bashrc
     fi
 
-
 Therefore, my local `.bash_profile` sources my local `.bashrc` and my local `.bashrc` sources the `bashrc` file that lives in my home folder.
