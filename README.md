@@ -5,11 +5,12 @@ My bash setup. Just using Github as an offsite backup of this Git repo.
 
 FWIW, this `bin` dir lives locally in my Dropbox folder. The contents of my `~/.bashrc` and `~/.bash_profile` are as follows.
 
-### ~/.bashrc:
+    # ~/.bashrc:
 
     source ~/Dropbox/bin/dotfiles/bashrc
 
-### ~/.bash_profile:
+
+    # ~/.bash_profile:
 
     if [ -f ~/.bashrc ];
     then
