@@ -1,8 +1,8 @@
 export LANG=en_US.UTF-8       # Added so I can generate Octopress blogs from Diet Coda
 export LC_ALL=en_US.UTF-8     # Added so I can generate Octopress blogs from Diet Coda
-export PATH=/usr/local/bin:$PATH:~/bin
 # export EDITOR="mate -w"
 export EDITOR="atom --wait"
+export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 # remove duplicate entries from PATH, and remove trailing colons as well
 export PATH=$(echo -n "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++' | sed 's/:$//')
 
@@ -12,3 +12,7 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # Git tab completion file, part of the Homebrew install of Git
 source /usr/local/etc/bash_completion.d/git-completion.bash
+
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
+export PAGER="less"
