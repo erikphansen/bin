@@ -11,8 +11,8 @@ alias refreshfinder='sudo find / -name .DS_Store -delete; killall Finder'
 alias bt='buildtemplate'
 alias e='mate -w'
 alias src='source ~/.bashrc'
-alias ea='mate -w ~/bin/dotfiles/bash/aliases && src' # Edit aliases
-alias ee='mate -w ~/bin/dotfiles/bash/env && src'
+alias ea='atom --wait ~/bin/dotfiles/bash/aliases && src' # Edit aliases
+alias ee='atom --wait ~/bin/dotfiles/bash/env && src'
 alias ax="chmod a+x"
 alias zzz="pmset sleepnow"
 
