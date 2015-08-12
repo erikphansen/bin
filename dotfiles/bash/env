@@ -6,5 +6,9 @@ export EDITOR="atom --wait"
 # remove duplicate entries from PATH, and remove trailing colons as well
 export PATH=$(echo -n "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++' | sed 's/:$//')
 
+# for RVM
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
 # Git tab completion file, part of the Homebrew install of Git
 source /usr/local/etc/bash_completion.d/git-completion.bash
