@@ -38,6 +38,6 @@ BMAGENTA='\e[45m'
 BCYAN='\e[46m'
 BWHITE='\e[47m'
 
-PS1="\n\u@\h\[$RED\][\!]\[$NO_COLOR\]:\[$YELLOW\]\w \[$ECYAN\]\$(vcprompt)\[$NO_COLOR\] \n→ "
+PS1="\n\u@\h\[$RED\][\!]\[$NO_COLOR\]:\[$YELLOW\]\w \[$ECYAN\]\$(vcprompt)\[$NO_COLOR\] \n$ "
 # From PCS
 # export PS1="\[$(tput bold)\]\[$(tput setaf 5)\]\u\[$(tput sgr0)\]:\[$(tput bold)\]\[$(tput setaf 2)\]\h\[$(tput sgr0)\]:\[$(tput bold)\]\[$(tput setaf 4)\]\w\[$(tput sgr0)\]\n$ \[$(tput sgr0)\]"
