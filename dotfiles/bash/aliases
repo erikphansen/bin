@@ -6,13 +6,14 @@ alias mxmlc='/Developer/SDKs/flex_sdk_4/bin/mxmlc'
 alias fcsh='/Developer/SDKs/flex_sdk_4/bin/fcsh'
 alias wifi='networksetup -setairportpower en0'
 alias refreshfinder='sudo find / -name .DS_Store -delete; killall Finder'
+alias l='less'
 
 # Utility
 alias bt='buildtemplate'
 alias e='mate -w'
 alias src='source ~/.bashrc'
 alias ea='mate -w ~/bin/dotfiles/bash/aliases && src' # Edit aliases
-alias ee='mate -w ~/bin/dotfiles/bash/env && src'
+alias ee='mate -w ~/bin/dotfiles/bash/config && src'
 alias ax="chmod a+x"
 alias zzz="pmset sleepnow"
 
