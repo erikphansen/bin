@@ -120,22 +120,22 @@ On_IWhite="\[\033[0;107m\]"   # White
 Time24h="\t"
 Time12h="\T"
 Time12a="\@"
-PathShort="\w"
-PathFull="\W"
+PathFull="\w"
+PathShort="\W"
 NewLine="\n"
 Jobs="\j"
 
-export PS1="\n"$IWhite$Time24h" \u@\h"$Color_Off'$(git branch &>/dev/null;\
+export PS1="\n"$Purple$Time24h$Color_Off" \u@\h"$Color_Off'$(git branch &>/dev/null;\
 if [ $? -eq 0 ]; then \
   echo "$(echo `git status` | grep "nothing to commit" > /dev/null 2>&1; \
   if [ "$?" -eq "0" ]; then \
     # @4 - Clean repository - nothing to commit
-    echo "'$Green'"$(__git_ps1 " (%s)"); \
+    echo "'$BIGreen'"$(__git_ps1 " |%s|"); \
   else \
     # @5 - Changes to working tree
-    echo "'$BIRed'"$(__git_ps1 " »%s«"); \
-  fi) '$Color_Off$BIYellow$PathShort$Color_Off'\n\$ "; \
+    echo "'$BIRed'"$(__git_ps1 " »»%s««"); \
+  fi) '$Color_Off$Cyan$PathFull$Color_Off'\n\$ "; \
 else \
   # @2 - Prompt when not in GIT repo
-  echo " '$Color_Off$BIYellow$PathShort$Color_Off'\n\$ "; \
+  echo " '$Color_Off$Cyan$PathFull$Color_Off'\n\$ "; \
 fi)'
