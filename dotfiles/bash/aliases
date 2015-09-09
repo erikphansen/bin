@@ -50,6 +50,7 @@ alias gca='git commit -v -a'
 alias gb='git branch'
 alias gba='git branch -a'
 alias gco='git checkout'
+alias gm='git checkout master'
 alias grom='git rebase origin/master'
 alias gfr='gf; grom'
 # Remove git from a project
