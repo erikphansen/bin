@@ -125,7 +125,7 @@ PathShort="\W"
 NewLine="\n"
 Jobs="\j"
 
-export PS1="\n"$Purple$Time24h$Color_Off" \u@\h"$Color_Off'$(git branch &>/dev/null;\
+export PS1="\n"$Blue$Time24h" "$IPurple"\u@\h"$Color_Off":"$BICyan$PathFull'$(git branch &>/dev/null;\
 if [ $? -eq 0 ]; then \
   echo "$(echo `git status` | grep "nothing to commit" > /dev/null 2>&1; \
   if [ "$?" -eq "0" ]; then \
@@ -134,8 +134,8 @@ if [ $? -eq 0 ]; then \
   else \
     # @5 - Changes to working tree
     echo "'$BIRed'"$(__git_ps1 " »»%s««"); \
-  fi) '$Color_Off$Cyan$PathFull$Color_Off'\n\$ "; \
+  fi) '$Color_Off'\n\$ "; \
 else \
   # @2 - Prompt when not in GIT repo
-  echo " '$Color_Off$Cyan$PathFull$Color_Off'\n\$ "; \
+  echo " '$Color_Off'\n\$ "; \
 fi)'
