@@ -1,27 +1,31 @@
-#
+# ls better
 alias lsa='ls -hal'
-alias ta='cd ~/tellapart'
-alias db='cd ~/Dropbox'
-alias mxmlc='/Developer/SDKs/flex_sdk_4/bin/mxmlc'
-alias fcsh='/Developer/SDKs/flex_sdk_4/bin/fcsh'
+alias la="ls -aF"
+alias ld="ls -ld"
+alias ll="ls -l"
+alias lt='ls -At1 && echo "------Oldest--"'
+alias ltr='ls -Art1 && echo "------Newest--"'
+
+#
 alias wifi='networksetup -setairportpower en0'
 alias refreshfinder='sudo find / -name .DS_Store -delete; killall Finder'
+
+# apps
 alias l='less'
+alias st='stree'
+alias knex='`npm bin`/knex'
+alias mxmlc='/Developer/SDKs/flex_sdk_4/bin/mxmlc'
+alias fcsh='/Developer/SDKs/flex_sdk_4/bin/fcsh'
 
-# Utility
-alias bt='buildtemplate'
-alias e='mate -w'
-alias src='source ~/.bashrc'
-alias ea='mate -w ~/bin/dotfiles/bash/aliases && src' # Edit aliases
-alias ee='mate -w ~/bin/dotfiles/bash/config && src'
-alias ax="chmod a+x"
-alias zzz="pmset sleepnow"
-
-newdir() {
-    mkdir $1;
-    cd $1
-}
-
+# cd
+alias ta='cd ~/tellapart'
+alias db='cd ~/Dropbox'
+alias p='cd ~/projects'
+alias pcs='cd ~/projects/pcs'
+alias work='cd ~/projects-work'
+alias down='cd ~/Downloads'
+alias desk='cd ~/Desktop'
+alias pp='cd /Users/erikhansen/Library/Application Support/Sublime Text 3/Packages/User'
 ###
 # The function and alias below are from
 # [Brett Terpstra](http://brettterpstra.com/2013/02/09/quick-tip-jumping-to-the-finder-location-in-terminal/)
@@ -38,21 +42,37 @@ cdf() {
 # open current path in Finder
 alias f='open -a Finder ./'
 
+# Utility
+alias bt='buildtemplate'
+alias e='subl'
+alias src='source ~/.bashrc'
+alias ea='subl -w ~/bin/dotfiles/bash/aliases && src'
+alias ee='subl -w ~/bin/dotfiles/bash/config && src'
+alias ax="chmod a+x"
+alias zzz="pmset sleepnow"
+
+newdir() {
+    mkdir $1;
+    cd $1
+}
+
 # git aliases
 alias g='git status'
-alias gl='git pull'
+alias pull='git pull'
 alias gf='git fetch'
-alias gp='git push'
-alias gd='git diff | mate -w'
+alias push='git push'
+alias gd='git diff | subl -w'
 alias gdd='git difftool'
 alias gc='git commit -v'
 alias gca='git commit -v -a'
+alias gcm='git commit -v -a -m'
 alias gb='git branch'
 alias gba='git branch -a'
 alias gco='git checkout'
 alias gm='git checkout master'
 alias grom='git rebase origin/master'
 alias gfr='gf; grom'
+
 # Remove git from a project
 alias ungit="find . -name '.git' -exec rm -rf {} \;"
 # Remove svn from a projects
@@ -80,13 +100,6 @@ alias hi="history -n" # import history
 
 # Get your current public IP
 alias ip="curl ipv4.icanhazip.com && curl ipv6.icanhazip.com"
-
-# ls better
-alias la="ls -aF"
-alias ld="ls -ld"
-alias ll="ls -l"
-alias lt='ls -At1 && echo "------Oldest--"'
-alias ltr='ls -Art1 && echo "------Newest--"'
 
 # mount all connected Firewire disks
 alias mountall='system_profiler SPFireWireDataType | grep "BSD Name: disk.$" | sed "s/^.*: //" | (while read i; do /usr/sbin/diskutil mountDisk $i; done)'
