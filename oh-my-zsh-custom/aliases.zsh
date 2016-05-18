@@ -46,12 +46,11 @@ cdf() {
 alias f='open -a Finder ./'
 
 # Utility
-alias bt='buildtemplate'
 alias e='subl'
-alias env='subl ~/.zshrc ~/.oh-my-zsh'
+alias env='subl ~/bin/dotfiles/zshrc ~/bin/oh-my-zsh-custom/'
 # alias ea='subl -w ~/bin/dotfiles/bash/aliases && src'
 # alias ee='subl -w ~/bin/dotfiles/bash/config && src'
-alias ax="chmod a+x"
+alias ax="chmod a+x" # $ ax my-script.sh
 alias zzz="pmset sleepnow"
 
 newdir() {
