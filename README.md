@@ -1,14 +1,19 @@
 bin
 ===
 
-My bash setup. Just using Github as an offsite backup of this Git repo.
+My shell setup. Just using Github as an offsite backup of this Git repo.
 
-FWIW, this `bin` dir lives locally in my home folder. The contents of my `~/.bashrc` and `~/.bash_profile` are as follows.
+Wednesday, May 18, 2016: Added a `zshrc` file to the mix since I've been using ZSH and Oh My ZSH for some time now.
+
+This `bin` dir lives locally in my home folder. The contents of my shell config files are as follows.
+
+    # ~/.zshrc:
+
+    source ~/bin/dotfiles/zshrc
 
     # ~/.bashrc:
 
     source ~/bin/dotfiles/bashrc
-
 
     # ~/.bash_profile:
 
@@ -17,4 +22,4 @@ FWIW, this `bin` dir lives locally in my home folder. The contents of my `~/.bas
         source ~/.bashrc
     fi
 
-Therefore, my local `.bash_profile` sources my local `.bashrc` and my local `.bashrc` sources the `bashrc` file that lives in my home folder.
+This way I can keep all of my config files under source control easily.
