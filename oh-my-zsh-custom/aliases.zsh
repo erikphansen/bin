@@ -6,10 +6,6 @@ alias ll="ls -l"
 alias lt='ls -At1 && echo "------Oldest--"'
 alias ltr='ls -Art1 && echo "------Newest--"'
 
-#
-# me() {
-#   echo `whoami`@`hostname`
-# }
 alias me='echo `whoami`@`hostname`'
 alias wifi='networksetup -setairportpower en0'
 alias refreshfinder='sudo find / -name .DS_Store -delete; killall Finder'

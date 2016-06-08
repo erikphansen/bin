@@ -34,9 +34,9 @@ tests must set the `bracket-level-#` keys themselves.  For example:
 
     ZSH_HIGHLIGHT_STYLES[bracket-level-1]=
     ZSH_HIGHLIGHT_STYLES[bracket-level-2]=
-
+    
     BUFFER='echo ({x})'
-
+    
     expected_region_highlight=(
       "6  6  bracket-level-1" # (
       "7  7  bracket-level-2" # {
@@ -54,9 +54,9 @@ itself as third word (cf. the [documentation for `expected_region_highlight`]
 (docs/highlighters.md)).  For example:
 
     ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=white,bold,bg=red')
-
+    
     BUFFER='rm -rf /'
-
+    
     expected_region_highlight=(
       "1 8 fg=white,bold,bg=red" # rm -rf /
     )
