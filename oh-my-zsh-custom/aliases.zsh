@@ -128,3 +128,9 @@ alias tp='touch todo.taskpaper && open -a "Taskpaper" todo.taskpaper'
 
 # interactive fasd
 alias zi="fasd -e cd -i"
+
+# command to show the last N commands from the history
+function last
+{
+    fc -l -$1 -1
+}
