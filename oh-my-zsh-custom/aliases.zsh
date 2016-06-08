@@ -15,8 +15,10 @@ alias refreshfinder='sudo find / -name .DS_Store -delete; killall Finder'
 alias tt='stree'
 alias mxmlc='/Developer/SDKs/flex_sdk_4/bin/mxmlc'
 alias fcsh='/Developer/SDKs/flex_sdk_4/bin/fcsh'
+eval "$(thefuck --alias)"
 
 # common directories
+alias aps='cd ~/Library/Application\ Support'
 alias ta='cd ~/tellapart'
 alias db='cd ~/Dropbox'
 alias p='cd ~/projects'
@@ -24,7 +26,8 @@ alias pcs='cd ~/pcs'
 alias work='cd ~/projects-work'
 alias down='cd ~/Downloads'
 alias desk='cd ~/Desktop'
-alias pp='cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User'
+alias pp='cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User && st .'
+alias kar='cd ~/projects/karabiner && st . core.xml'
 ###
 # The function and alias below are from
 # [Brett Terpstra](http://brettterpstra.com/2013/02/09/quick-tip-jumping-to-the-finder-location-in-terminal/)
