@@ -28,6 +28,7 @@ alias down='cd ~/Downloads'
 alias desk='cd ~/Desktop'
 alias pp='cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User && st .'
 alias kar='cd ~/projects/karabiner && st . core.xml'
+alias cf='cd ~/codefellows'
 ###
 # The function and alias below are from
 # [Brett Terpstra](http://brettterpstra.com/2013/02/09/quick-tip-jumping-to-the-finder-location-in-terminal/)
