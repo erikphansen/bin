@@ -1,5 +1,3 @@
-# source ~/bin/dotfiles/zshrc
-
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # Customized my Oh My ZSH customizations folder
