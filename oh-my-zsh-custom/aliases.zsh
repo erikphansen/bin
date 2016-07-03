@@ -1,5 +1,5 @@
 # ls better
-alias lsa='ls -hal'
+# alias lsa='ls -hal' # `l` already does this. I think it's an alias built into oh-my-ZSH?
 alias la="ls -aF"
 alias ld="ls -ld"
 alias ll="ls -l"
@@ -27,9 +27,10 @@ alias pcs='cd ~/pcs'
 alias work='cd ~/projects-work'
 alias down='cd ~/Downloads'
 alias desk='cd ~/Desktop'
-alias pp='cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User && st .'
-alias kar='cd ~/projects/karabiner && st . core.xml'
+alias pp='cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User && subl .'
+alias kar='cd ~/projects/karabiner && subl . core.xml'
 alias cf='cd ~/codefellows'
+alias dm='cd ~/pcs/DashMonster'
 ###
 # The function and alias below are from
 # [Brett Terpstra](http://brettterpstra.com/2013/02/09/quick-tip-jumping-to-the-finder-location-in-terminal/)
@@ -47,7 +48,12 @@ cdf() {
 alias f='open -a Finder ./'
 
 # Utility
+# export EDITOR="/usr/local/bin/editor.sh"
+# export VISUAL="/usr/local/bin/editor.sh"
+# export EDITOR="vim"
+# export VISUAL="vim"
 alias e='subl'
+alias e.='e .' #typo prevention!
 alias env='subl ~/bin/dotfiles/zshrc ~/bin/oh-my-zsh-custom/'
 # alias ea='subl -w ~/bin/dotfiles/bash/aliases && src'
 # alias ee='subl -w ~/bin/dotfiles/bash/config && src'
@@ -62,8 +68,9 @@ newdir() {
 # git aliases
 alias g='git status'
 alias pull='git pull'
-alias gf='git fetch'
+alias clone='git clone'
 alias push='git push'
+alias gf='git fetch'
 alias gd='git diff | subl -w'
 alias gdd='git difftool'
 alias gc='git commit -v'
