@@ -12,7 +12,8 @@ alias refreshfinder='sudo find / -name .DS_Store -delete; killall Finder'
 
 # apps
 # alias l='less'
-alias tt='stree'
+# alias tt='stree'
+alias tt='gittower .'
 alias mxmlc='/Developer/SDKs/flex_sdk_4/bin/mxmlc'
 alias fcsh='/Developer/SDKs/flex_sdk_4/bin/fcsh'
 eval "$(thefuck --alias)"
