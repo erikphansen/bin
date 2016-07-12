@@ -11,26 +11,26 @@ alias wifi='networksetup -setairportpower en0'
 alias refreshfinder='sudo find / -name .DS_Store -delete; killall Finder'
 
 # apps
-# alias l='less'
-# alias tt='stree'
-alias tt='gittower .'
-alias mxmlc='/Developer/SDKs/flex_sdk_4/bin/mxmlc'
+alias e.='e .' #typo prevention!
+alias e='subl'
 alias fcsh='/Developer/SDKs/flex_sdk_4/bin/fcsh'
+alias mxmlc='/Developer/SDKs/flex_sdk_4/bin/mxmlc'
+alias tt='stree'
 eval "$(thefuck --alias)"
 
 # common directories
 alias aps='cd ~/Library/Application\ Support'
-alias ta='cd ~/tellapart'
+alias bin='cd ~/bin'
+alias cf='cd ~/codefellows'
 alias db='cd ~/Dropbox'
+alias desk='cd ~/Desktop'
+alias dm='cd ~/pcs/DashMonster'
+alias down='cd ~/Downloads'
+alias kar='cd ~/projects/karabiner && subl . core.xml'
 alias p='cd ~/projects'
 alias pcs='cd ~/pcs'
-alias work='cd ~/projects-work'
-alias down='cd ~/Downloads'
-alias desk='cd ~/Desktop'
 alias pp='cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User && subl .'
-alias kar='cd ~/projects/karabiner && subl . core.xml'
-alias cf='cd ~/codefellows'
-alias dm='cd ~/pcs/DashMonster'
+alias work='cd ~/projects-work'
 ###
 # The function and alias below are from
 # [Brett Terpstra](http://brettterpstra.com/2013/02/09/quick-tip-jumping-to-the-finder-location-in-terminal/)
@@ -52,8 +52,6 @@ alias f='open -a Finder ./'
 # export VISUAL="/usr/local/bin/editor.sh"
 # export EDITOR="vim"
 # export VISUAL="vim"
-alias e='subl'
-alias e.='e .' #typo prevention!
 alias env='subl ~/bin/dotfiles/zshrc ~/bin/oh-my-zsh-custom/'
 # alias ea='subl -w ~/bin/dotfiles/bash/aliases && src'
 # alias ee='subl -w ~/bin/dotfiles/bash/config && src'
