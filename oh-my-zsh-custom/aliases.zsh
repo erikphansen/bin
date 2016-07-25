@@ -140,3 +140,9 @@ function last
 {
     fc -l -$1 -1
 }
+
+# list only hidden files
+function hidden
+{
+  ls -a $@ | grep '\.'
+}
