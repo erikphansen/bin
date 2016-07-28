@@ -1,5 +1,5 @@
 # ls better
-# alias lsa='ls -hal' # `l` already does this. I think it's an alias built into oh-my-ZSH?
+alias l='ls -hal'
 alias la="ls -aF"
 alias ld="ls -ld"
 alias ll="ls -l"
@@ -11,8 +11,8 @@ alias wifi='networksetup -setairportpower en0'
 alias refreshfinder='sudo find / -name .DS_Store -delete; killall Finder'
 
 # apps
-alias e.='e .' #typo prevention!
 alias e='subl'
+alias e.='e .' #typo prevention!
 alias fcsh='/Developer/SDKs/flex_sdk_4/bin/fcsh'
 alias mxmlc='/Developer/SDKs/flex_sdk_4/bin/mxmlc'
 alias tt='stree'

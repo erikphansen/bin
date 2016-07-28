@@ -1,0 +1,6 @@
+# List of currently installed packages and themes
+package osx
+package rbenv
+theme agnoster
+theme bobthefish
+theme default
