@@ -40,6 +40,9 @@ function tt
 end
 
 # common directories
+function w
+    cd ~/womply
+end
 function aps
     cd ~/Library/Application\ Support
 end
