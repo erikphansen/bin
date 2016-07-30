@@ -129,7 +129,7 @@ function pull
     git pull
 end
 function clone
-    git clone
+    git clone $argv
 end
 function push
     git push
