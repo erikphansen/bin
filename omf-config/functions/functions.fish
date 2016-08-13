@@ -163,7 +163,7 @@ function gba
     git branch -a
 end
 function gco
-    git checkout
+    git checkout $argv
 end
 function gm
     git checkout master
