@@ -35,6 +35,9 @@ end
 function e.
     e .
 end
+function ee
+    e .
+end
 function tt
     stree
 end
@@ -62,7 +65,8 @@ function down
     cd ~/Downloads
 end
 function kar
-    cd ~/projects/karabiner and subl . core.xml
+    cd ~/Dropbox/karabiner
+    subl . core.xml
 end
 function p
     cd ~/projects
