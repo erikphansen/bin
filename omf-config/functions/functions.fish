@@ -266,7 +266,12 @@ function ssh-fingerprint
 end
 
 function ical
-    icalBuddy -sc -f -n eventsToday+$argv
+    set days eval
+    if test $argv[1]
+        set days $argv[1]
+    end
+    echo $days
+    icalBuddy -sc -f -n eventsToday+$days
 end
 
 # command to show the last N commands from the history
