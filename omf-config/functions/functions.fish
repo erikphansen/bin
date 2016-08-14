@@ -257,6 +257,14 @@ function zi
     fasd -e cd -i
 end
 
+function ssh-fingerprint
+    ssh-keygen -E md5 -lf $argv
+end
+
+function ical
+    icalBuddy -sc -f -n eventsToday+$argv
+end
+
 # command to show the last N commands from the history
 # function last
 # {
