@@ -1,8 +1,5 @@
 # List of currently installed packages and themes
 package osx
 package rbenv
-theme cbjohnson
-theme clearance
 theme default
-theme lambda
-theme pure
+theme eph
