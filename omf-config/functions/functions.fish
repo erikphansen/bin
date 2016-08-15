@@ -266,11 +266,10 @@ function ssh-fingerprint
 end
 
 function ical
-    set days eval
+    set -l days 0
     if test $argv[1]
         set days $argv[1]
     end
-    echo $days
     icalBuddy -sc -f -n eventsToday+$days
 end
 
