@@ -30,7 +30,8 @@ end
 
 # apps
 function e
-    subl $argv
+    # subl $argv
+    atom $argv
 end
 function e.
     e .
@@ -66,7 +67,7 @@ function down
 end
 function kar
     cd ~/Dropbox/karabiner
-    subl . core.xml
+    e . core.xml
 end
 function p
     cd ~/projects
@@ -142,7 +143,7 @@ function gf
     git fetch
 end
 function gd
-    git diff | subl -w
+    git diff | e -w
 end
 function gdd
     git difftool
