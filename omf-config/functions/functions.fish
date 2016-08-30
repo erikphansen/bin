@@ -158,10 +158,7 @@ function gcm
     git commit -v -a -m $argv
 end
 function gb
-    git branch
-end
-function gba
-    git branch -a
+    git branch $argv
 end
 function gco
     git checkout $argv
@@ -171,6 +168,9 @@ function gm
 end
 function grom
     git rebase origin/master
+end
+function grod
+    git rebase origin/develop
 end
 function gfr
     gf; grom
