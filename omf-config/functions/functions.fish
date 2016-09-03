@@ -140,7 +140,7 @@ function clone
     git clone $argv
 end
 function push
-    git push
+    git push $argv
 end
 function gf
     git fetch
