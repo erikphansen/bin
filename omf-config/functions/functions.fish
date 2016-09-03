@@ -146,7 +146,7 @@ function gf
     git fetch
 end
 function gd
-    git diff | e -w
+    git diff | subl -w
 end
 function gdd
     git difftool
