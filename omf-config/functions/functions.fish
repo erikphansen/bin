@@ -178,6 +178,9 @@ end
 function gfr
     gf; grom
 end
+function releasebranch
+    git checkout -b release_(date +"%Y%m%d%H%M%S") develop
+end
 
 # Remove git from a project
 function ungit
