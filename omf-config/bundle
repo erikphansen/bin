@@ -1,4 +1,5 @@
 # List of currently installed packages and themes
+package hub
 package osx
 package rbenv
 theme default

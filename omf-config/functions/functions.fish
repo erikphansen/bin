@@ -127,6 +127,9 @@ function newdir
 end
 
 # git
+function git
+    hub $argv
+end
 function g
     git status
 end
