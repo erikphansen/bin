@@ -1,3 +1,12 @@
+set -g ATOM_HOME ~/Dropbox/Atom
+
+function idrive -d 'cd into the iCloud Drive'
+    cd ~/Library/Mobile\ Documents/com~apple~CloudDocs
+end
+function ebin -d 'Edit custom shell setup'
+    e -w ~/bin ~/bin/omf-config/functions/functions.fish
+    and omf reload
+end
 # ls better
 function l
     ls -hal
