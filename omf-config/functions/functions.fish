@@ -151,6 +151,9 @@ end
 function push
     git push $argv
 end
+function amend -d "git commit --amend"
+    git commit --amend
+end
 function gf
     git fetch
 end
