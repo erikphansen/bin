@@ -40,7 +40,7 @@ end
 # apps
 function e
     # subl $argv
-    atom $argv
+    atom -n $argv
 end
 function e.
     e .
@@ -145,8 +145,12 @@ end
 function pull
     git pull
 end
-function clone
+function clone -d 'clone repo and attempt to `cd` into its new directory'
+    set newdir (string split '/' $argv)
+    set newdir (string split '.' $newdir[2])
+    set newdir $newdir[1]
     git clone $argv
+    and cd $newdir
 end
 function push
     git push $argv
@@ -224,22 +228,6 @@ function cpwd
     pwd|tr -d "\n"|pbcopy
 end
 
-# DNS (with update thanks to @blanco)
-function flush
-    sudo killall -HUP mDNSResponder
-end
-function flush
-    sudo killall -HUP mDNSResponder
-end
-
-# share history between terminal sessions
-function he
-    history -a
-end # export history
-function hi
-    history -n
-end # import history
-
 # Get your current public IP
 function ip
     curl ipv4.icanhazip.com and curl ipv6.icanhazip.com
@@ -260,11 +248,6 @@ function tmlog
     syslog -F '\$Time \$Message' -k Sender com.apple.backupd-auto -k Time ge -30m | tail -n 1
 end
 
-# trim newlines
-function tn
-    tr -d "\n"
-end
-
 # list TODO/FIX lines from the current project
 function todos
     ack -n --nogroup '(TODO|FIX(ME)?):'
@@ -273,11 +256,6 @@ end
 # create a Taskpaper todo file in the current folder
 function tp
     touch todo.taskpaper and open -a "Taskpaper" todo.taskpaper
-end
-
-# interactive fasd
-function zi
-    fasd -e cd -i
 end
 
 function ssh-fingerprint
