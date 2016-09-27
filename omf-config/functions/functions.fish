@@ -140,7 +140,7 @@ function newdir
     cd $argv
 end
 
-# git
+# Git functions
 function git
     hub $argv
 end
@@ -166,9 +166,6 @@ end
 function gf
     git fetch
 end
-function gd
-    git diff | subl -w
-end
 function gdd
     git difftool
 end
@@ -189,6 +186,9 @@ function gco
 end
 function gm
     git checkout master
+end
+function gd
+    git checkout develop
 end
 function grom
     git rebase origin/master
