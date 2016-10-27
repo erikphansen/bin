@@ -199,6 +199,9 @@ end
 function gfr
     gf; grom
 end
+function gl
+    git log
+end
 function releasebranch
     git checkout -b release_(date +"%Y%m%d%H%M%S") develop
 end
