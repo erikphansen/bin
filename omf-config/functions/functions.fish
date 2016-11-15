@@ -266,7 +266,7 @@ function tp
     touch todo.taskpaper and open -a "Taskpaper" todo.taskpaper
 end
 
-function ssh-fingerprint
+function fingerprint
     ssh-keygen -E md5 -lf $argv
 end
 
