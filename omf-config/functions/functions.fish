@@ -288,8 +288,11 @@ end
 #   ls -a $@ | grep '\.'
 # }
 function wcjs -d 'Builds WCJS and copies it to the given app repo'
+  set -l currentDir (pwd)
+  cd ~/womply/womply-common-js
   gulp build
   if test $argv
     and cp -r build/js/ ~/womply/$argv/node_modules/@womply/womply-common-js/build/js/
   end
+  cd $currentDir
 end
