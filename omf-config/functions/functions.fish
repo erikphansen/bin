@@ -1,5 +1,3 @@
-set -g ATOM_HOME ~/Dropbox/Atom
-
 function idrive -d 'cd into the iCloud Drive'
     cd ~/Library/Mobile\ Documents/com~apple~CloudDocs
 end
@@ -289,3 +287,9 @@ end
 # {
 #   ls -a $@ | grep '\.'
 # }
+function wcjs -d 'Builds WCJS and copies it to the given app repo'
+  gulp build
+  if test $argv
+    and cp -r build/js/ ~/womply/$argv/node_modules/@womply/womply-common-js/build/js/
+  end
+end
