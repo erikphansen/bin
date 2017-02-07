@@ -292,7 +292,17 @@ function wcjs -d 'Builds WCJS and copies it to the given app repo'
   cd ~/womply/womply-common-js
   gulp build
   if test $argv
-    and cp -r build/js/ ~/womply/$argv/node_modules/@womply/womply-common-js/build/js/
+    and cp -r build/ ~/womply/$argv/node_modules/@womply/womply-common-js/build/
+  end
+  cd $currentDir
+end
+
+function gmdnav -d 'Builds GMD-Nav and copies it to the given app repo'
+  set -l currentDir (pwd)
+  cd ~/womply/gmd-nav
+  gulp build
+  if test $argv
+    and cp -r build/ ~/womply/$argv/node_modules/@womply/gmd-nav/build/
   end
   cd $currentDir
 end
