@@ -200,9 +200,6 @@ end
 function gl
     git log
 end
-function releasebranch
-    git checkout -b release_(date +"%Y%m%d%H%M%S") develop
-end
 
 # Remove git from a project
 function ungit
@@ -291,7 +288,7 @@ function wcjs -d 'Builds WCJS and copies it to the given app repo'
   set -l currentDir (pwd)
   cd ~/womply/womply-common-js
   gulp build
-  if test $argv
+  if test -n "$argv"
     and cp -r build/ ~/womply/$argv/node_modules/@womply/womply-common-js/build/
   end
   cd $currentDir
@@ -301,8 +298,32 @@ function gmdnav -d 'Builds GMD-Nav and copies it to the given app repo'
   set -l currentDir (pwd)
   cd ~/womply/gmd-nav
   gulp build
-  if test $argv
+  if test -n "$argv"
     and cp -r build/ ~/womply/$argv/node_modules/@womply/gmd-nav/build/
+  end
+  cd $currentDir
+end
+
+function releasebranch
+    git checkout -b release_(date +"%Y%m%d%H%M%S") develop
+end
+
+function releaseapps
+  set dirs gmd-insights bizshield-ui customer-analytics-ui angular-reputation-defense-ui launchpad-ui vault-ui feedback-ui ads-ui messenger-ui
+  if test -n "$argv"
+    set dirs $argv
+  end
+  set currentDir (pwd)
+  for dir in $dirs
+    set timestamp (date +"%Y%m%d%H%M%S")
+    cd $HOME/womply/$dir
+    git checkout -b release_$timestamp develop
+    git push
+    # sadly the following command does not output the URL of the PR, so we can't easily save it to the pasteboard
+    git pull-request -b master -m "Release $timestamp" -o
+    # delete the temp release branch
+    git checkout develop
+    git branch -d release_$timestamp
   end
   cd $currentDir
 end
