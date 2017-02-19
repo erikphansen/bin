@@ -327,3 +327,7 @@ function releaseapps
   end
   cd $currentDir
 end
+
+function pr
+  git push; and git pull-request -b develop -o
+end
