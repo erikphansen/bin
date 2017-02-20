@@ -9,9 +9,9 @@ function fish_prompt
   if not set -q __fish_prompt_char
     switch (id -u)
       case 0
-        set -g __fish_prompt_char '#'
+        set -g __fish_prompt_char '# '
       case '*'
-        set -g __fish_prompt_char '❯'
+        set -g __fish_prompt_char '❯ '
     end
   end
 
@@ -24,6 +24,7 @@ function fish_prompt
   set -l blue (set_color blue)
   set -l limegreen (set_color 87ff00)
   set -l purple (set_color af5fff)
+  set -l red (set_color red)
 
   # Configure __fish_git_prompt
   set -g __fish_git_prompt_char_stateseparator ' '
@@ -39,10 +40,10 @@ function fish_prompt
   set -g __fish_git_prompt_show_informative_status true
 
   # Line 1
-  echo -n \n$blue(__parse_current_folder)
-  __fish_git_prompt " (%s)"
+  echo
+  echo -ns $blue (__parse_current_folder); __fish_git_prompt " (%s)"
   echo
 
   # Line 2
-  echo -n (set_color red)'❯ '$normal
+  echo -ns $red $__fish_prompt_char $normal
 end
