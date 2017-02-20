@@ -14,16 +14,17 @@ This `bin` dir lives locally in my home folder. The contents of my shell config 
     # ~/.config/fish/config.fish
     source ~/bin/fish/config.fish
 
-    # ~/.zshrc:
+    # ~/.config/fish/functions is a symlink pointing at ~/bin/fish/functions
+    ln -s ~/bin/fish/functions ~/.config/fish
 
+
+    # ~/.zshrc:
     source ~/bin/dotfiles/zshrc
 
     # ~/.bashrc:
-
     source ~/bin/dotfiles/bashrc
 
     # ~/.bash_profile:
-
     if [ -f ~/.bashrc ];
     then
         source ~/.bashrc
