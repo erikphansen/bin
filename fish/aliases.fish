@@ -49,6 +49,7 @@ alias grom "git rebase origin/master"
 alias grod "git rebase origin/develop"
 alias gfr "gf; and grom"
 alias gl "git log"
+alias pr "git push; and git pull-request -b develop -o"
 
 # helpers
 alias me "echo (whoami)@(hostname)"
