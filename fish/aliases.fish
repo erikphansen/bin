@@ -2,6 +2,7 @@
 alias ... "cd ../.."
 alias .... "cd ../../.."
 alias ..... "cd ../../../.."
+alias cdd "cd -"
 
 # ls better
 alias l "ls -hal"
@@ -69,7 +70,6 @@ alias idrive "cd ~/Library/Mobile\ Documents/com~apple~CloudDocs"
 alias ungit "find . -name '.git' -exec rm -rf {} \;"
 # Remove svn from a projects
 alias unsvn "find . -name '.svn' -exec rm -rf {} \;"
-
 alias cpu "top -o cpu"
 alias mem "top -o rsize"
 # copy the working directory path
