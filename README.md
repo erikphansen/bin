@@ -17,7 +17,6 @@ This `bin` dir lives locally in my home folder. The contents of my shell config 
     # ~/.config/fish/functions is a symlink pointing at ~/bin/fish/functions
     ln -s ~/bin/fish/functions ~/.config/fish
 
-
     # ~/.zshrc:
     source ~/bin/dotfiles/zshrc
 
