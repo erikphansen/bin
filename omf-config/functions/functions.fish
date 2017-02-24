@@ -329,5 +329,10 @@ function releaseapps
 end
 
 function pr
-  git push; and git pull-request -b develop -o
+  set target-branch 'develop'
+  if test -n "$argv"
+    set target-branch $argv[0]
+  end
+  echo 'create pr to ' $target-branch
+  # git push; and git pull-request -b develop -o
 end
