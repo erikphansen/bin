@@ -79,7 +79,7 @@ alias ip "curl ipv4.icanhazip.com; and curl ipv6.icanhazip.com"
 # TODO: this `find` command fails in fish
 alias rmdbc "find . -name *\ \(*conflicted* -exec rm {} \;"
 # mute the system volume
-alias stfu "osascript -e 'set -x volume output muted true'"
+alias stfu "osascript -e 'set volume output muted true'"
 # time machine log
 alias tmlog "syslog -F '\$Time \$Message' -k Sender com.apple.backupd-auto -k Time ge -30m | tail -n 1"
 # create a Taskpaper todo file in the current folder
