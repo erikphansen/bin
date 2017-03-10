@@ -3,7 +3,7 @@ function gmdnav -d 'Builds GMD-Nav and copies it to the given app repo'
   cd ~/womply/gmd-nav
   gulp build
   if test -n "$argv"
-  and cp -r build/ ~/womply/$argv/node_modules/@womply/gmd-nav/build/
+    and cp -R build ~/womply/$argv/node_modules/@womply/gmd-nav/
   end
   cd $currentDir
 end

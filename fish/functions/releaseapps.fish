@@ -8,6 +8,8 @@ function releaseapps -d "Quickly make release branches, push them to github, cre
   for dir in $dirs
     set timestamp (date +"%Y%m%d%H%M%S")
     cd $HOME/womply/$dir
+    git checkout develop
+    git pull
     git checkout -b release_$timestamp develop
     git push
     # sadly the following command does not output the URL of the PR, so we can't easily save it to the pasteboard
