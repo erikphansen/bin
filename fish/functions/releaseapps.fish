@@ -12,12 +12,12 @@ function releaseapps -d "Quickly make release branches, push them to github, cre
     git pull
     git checkout -b release_$timestamp develop
     git push
-    # sadly the following command does not output the URL of the PR, so we can't easily save it to the pasteboard
-    # so we need to manually copy the URL to paste into Slack (or elsewhere) for review purposes
-    git pull-request -b master -m "Release $timestamp" -o
+    git pull-request -b master -m "Release $timestamp" | pbcopy
     # delete the temp release branch
     git checkout develop
     git branch -d release_$timestamp
+    echo 'You can find your PR at:' (pbpaste)
+    echo '(That URL has been copied to your clipboard, as well)'
   end
   cd $currentDir
 end

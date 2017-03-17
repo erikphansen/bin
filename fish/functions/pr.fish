@@ -7,6 +7,6 @@ function pr -d 'Quickly make a PR of the current branch into `develop` or the br
   end
   git push; and git pull-request -b $targetbranch -F msg.txt | pbcopy
   rm msg.txt
-  echo 'You can find your PR at' (pbpaste)
-  echo ' (That URL has been copied to your clipboard, as well)'
+  echo 'You can find your PR at:' (pbpaste)
+  echo '(That URL has been copied to your clipboard, as well)'
 end
