@@ -3,9 +3,12 @@
   email = eph@erikphansen.com
 [alias]
   co = checkout
-  sta = status
-  com = commit -v
+  s = status
+  c = commit -v
   b = branch
+  l = log
+  a = add
+  aa = add .
 [color]
   diff = auto
   status = auto

@@ -33,7 +33,8 @@ alias work "cd ~/projects-work"
 
 # git helpers
 alias git "hub"
-alias g "git status"
+alias g "git"
+alias gg "git status"
 alias pull "git pull"
 alias push "git push"
 alias amend "git commit --amend --no-edit"
