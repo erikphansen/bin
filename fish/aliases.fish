@@ -34,7 +34,7 @@ alias work "cd ~/projects-work"
 # git helpers
 alias git "hub"
 alias g "git"
-alias gg "git status"
+alias gs "git status"
 alias pull "git pull"
 alias push "git push"
 alias amend "git commit --amend --no-edit"
@@ -88,4 +88,6 @@ alias tp "touch todo.taskpaper; and open -a 'Taskpaper' todo.taskpaper"
 
 # Womply specific
 alias w "cd ~/womply"
+alias nav "cd ~/womply/gmd-nav"
+alias insights "cd ~/womply/gmd-insights"
 alias releasebranch "git checkout -b release_(date +'%Y%m%d%H%M%S') develop"
