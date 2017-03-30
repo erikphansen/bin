@@ -1,7 +1,7 @@
 function releaseapps -d "Quickly make release branches, push them to github, create PRs, and open PRs pages in Safari"
   set dirs gmd-insights bizshield-ui customer-analytics-ui angular-reputation-defense-ui launchpad-ui vault-ui feedback-ui ads-ui messenger-ui
   # if we passed in args, use those in place of the default `dirs`
-  if test -n "$argv"
+  if test $argv
     set dirs $argv
   end
   set currentDir (pwd)
