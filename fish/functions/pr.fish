@@ -2,7 +2,7 @@ function pr -d 'Quickly make a PR of the current branch into `develop` or the br
   # Reuse the last commit message as the PR message
   git log -1 --pretty=%B > msg.txt
   set targetbranch 'develop'
-  if test $argv
+  if count $argv > /dev/null
     set targetbranch $argv[1]
   end
   git push; and git pull-request -b $targetbranch -F msg.txt | pbcopy
