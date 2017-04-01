@@ -1,5 +1,5 @@
 function g -d "`git` or `git status`"
-  if test $argv
+  if count $argv > /dev/null
     git $argv
   else
     git status
