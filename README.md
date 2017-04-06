@@ -32,7 +32,10 @@ ln -s ~/bin/fish/functions ~/.config/fish
 ln -s ~/bin/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/bin/dotfiles/.gitignore_global ~/.gitignore_global
 
-ls -s ~/bin/hammerspoon/ ~/.hammerspoon
+# link the `hammerspoon` as `.hammerspoon` in my home folder
+ls -s ~/bin/hammerspoon ~/.hammerspoon
+# link the `karabiner` folder in the `~/.config/` folder
+ln -s ~/bin/karabiner ~/.config/
 ```
 
 This way I can keep all of my config files under source control easily.
