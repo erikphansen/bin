@@ -39,6 +39,7 @@ This way I can keep all of my config files under source control easily.
 
 ## Update Notes
 
+**Wednesday, April 5, 2017:** Added `karabiner` config folder.
 **Wednesday, April 5, 2017:** Added `hammerspoon` config folder.
 
 **Sunday, March 19, 2017:** Added global `.gitconfig` and `.gitignore_global` files to this repo under `dotfiles/`. This requires replacing those files in my home folder with symlinks.
