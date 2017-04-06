@@ -64,9 +64,9 @@ alias f "open -a Finder ./"
 # cd into the iCloud Drive
 alias idrive "cd ~/Library/Mobile\ Documents/com~apple~CloudDocs"
 # Remove git from a project
-alias ungit "find . -name '.git' -exec rm -rf {} \;"
+alias ungit "find . -name '.git' -exec rm -rf '{}' \;"
 # Remove svn from a projects
-alias unsvn "find . -name '.svn' -exec rm -rf {} \;"
+alias unsvn "find . -name '.svn' -exec rm -rf '{}' \;"
 alias cpu "top -o cpu"
 alias mem "top -o rsize"
 # copy the working directory path
