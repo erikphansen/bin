@@ -31,11 +31,15 @@ ln -s ~/bin/fish/functions ~/.config/fish
 # ~/.gitconfig and ~/.gitignore_global are symlinks
 ln -s ~/bin/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/bin/dotfiles/.gitignore_global ~/.gitignore_global
+
+ls -s ~/bin/hammerspoon/ ~/.hammerspoon
 ```
 
 This way I can keep all of my config files under source control easily.
 
 ## Update Notes
+
+**Wednesday, April 5, 2017:** Added `hammerspoon` config folder.
 
 **Sunday, March 19, 2017:** Added global `.gitconfig` and `.gitignore_global` files to this repo under `dotfiles/`. This requires replacing those files in my home folder with symlinks.
 
