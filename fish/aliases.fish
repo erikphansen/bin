@@ -51,7 +51,6 @@ alias gl "git log"
 
 # helpers
 alias me "echo (whoami)@(hostname)"
-alias wifi "networksetup -setairportpower en0"
 alias refreshfinder "sudo find / -name .DS_Store -delete; killall Finder"
 alias ax "chmod a+x"
 alias zzz "pmset -x sleepnow"
