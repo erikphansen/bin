@@ -6,16 +6,16 @@ function releaseapps -d "Quickly make release branches, push them to github, cre
   end
   set currentDir (pwd)
   for dir in $dirs
-    set timestamp (date +"%Y%m%d%H%M%S")
     cd $HOME/womply/$dir
     git checkout develop
     git pull
+    set timestamp (date +"%Y%m%d%H%M%S")
     git checkout -b release_$timestamp develop
     git push
     git pull-request -b master -m "Release $timestamp" | pbcopy
     # delete the temp release branch
     git checkout develop
-    git branch -d release_$timestamp
+    git branch -D release_$timestamp
     echo 'You can find your PR at:' (pbpaste)
     echo '(That URL has been copied to your clipboard, as well)'
   end
