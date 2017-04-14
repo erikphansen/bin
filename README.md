@@ -1,9 +1,11 @@
 bin
 ===
 
-My shell setup. Just using Github as an offsite backup of this Git repo.
+My shell setup, as well as a growing array of setup and config files for apps such as Karabiner Elements and Hammerspoon.
 
-This `bin` dir lives locally in my home folder. The contents of my shell config files are as follows:
+This `bin` dir lives in my Dropbox folder. I then have a symlink in my home folder so that `~/bin` will actually point to `~/Dropbox/bin`. You could also clone this repo to your machine's `~/bin` location.
+
+The contents of my shell config files are as follows:
 
 ```shell
 # ~/.config/fish/config.fish
@@ -40,9 +42,12 @@ ln -s ~/bin/karabiner ~/.config/
 
 This way I can keep all of my config files under source control easily.
 
-## Update Notes
+---
+
+#### Update Notes
 
 **Wednesday, April 5, 2017:** Added `karabiner` config folder.
+
 **Wednesday, April 5, 2017:** Added `hammerspoon` config folder.
 
 **Sunday, March 19, 2017:** Added global `.gitconfig` and `.gitignore_global` files to this repo under `dotfiles/`. This requires replacing those files in my home folder with symlinks.
