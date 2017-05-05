@@ -1,0 +1,13 @@
+pr() {
+  git log -1 --pretty=%B > msg.txt
+  targetbranch='develop'
+  if [ $1 ]; then
+    targetbranch=$1
+  fi
+  echo "Attempting to make a PR of this branch into '$targetbranch'..."
+  git push
+  hub pull-request -b $targetbranch -F msg.txt | pbcopy
+  rm msg.txt
+  echo 'You can find your PR at:' $(pbpaste)
+  echo '(That URL has been copied to your clipboard, as well)'
+}

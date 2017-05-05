@@ -4,6 +4,7 @@ export EDITOR="subl -w"
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 # remove duplicate entries from PATH, and remove trailing colons as well
 export PATH=$(echo -n "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++' | sed 's/:$//')
+export WOMPLY_DIR="$HOME/womply"
 
 # Git tab completion file, part of the Homebrew install of Git
 source /usr/local/etc/bash_completion.d/git-completion.bash
