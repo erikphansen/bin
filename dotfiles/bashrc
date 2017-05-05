@@ -3,3 +3,40 @@ source ~/bin/dotfiles/bash/config
 source ~/bin/dotfiles/bash/aliases
 source ~/bin/dotfiles/bash/pr
 source ~/bin/dotfiles/bash/releaseapps
+
+args() {
+  if [ "$#" -eq 0 ]; then
+    myArray=("gmd-insights" "bizshield-ui" "customer-analytics-ui" "angular-reputation-defense-ui" "launchpad-ui" "vault-ui" "feedback-ui" "ads-ui" "messenger-ui")
+  else
+    myArray=( "$@" )
+  fi
+  str=$""
+  for dir in "${myArray[@]}"
+  do
+    echo "$dir"
+    str="$str$dir
+
+    "
+  done
+
+  echo "str is: "$str
+}
+# args() {
+#   args=("first" "second")
+#   echo $args
+#   if [ $@ ]; then
+#     echo 'there are args, so save them'
+#     args=( "$@" )
+#     echo $args
+#     # for dir in "${args[@]}"
+#     # do
+#       # echo "$dir"
+#     # done
+#   else
+#     echo 'no args'
+#     for dir in "${args[@]}"
+#     do
+#       echo $dir
+#     done
+#   fi
+# }
