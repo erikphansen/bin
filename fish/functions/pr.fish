@@ -8,6 +8,12 @@ function pr -d 'Quickly make a PR of the current branch into `develop` or the br
   git push
   hub pull-request -b $targetbranch -F msg.txt | pbcopy
   rm msg.txt
-  echo 'You can find your PR at:' (pbpaste)
+  echo ''
+  set_color green
+  echo 'SUCCESS!'
+  set_color normal
+  echo 'You can find your PR at:' (set_color -u blue; pbpaste)
+  set_color normal
   echo '(That URL has been copied to your clipboard, as well)'
+  echo ''
 end

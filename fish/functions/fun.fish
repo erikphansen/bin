@@ -5,4 +5,12 @@ function fun -d 'just a test function for experimenting'
   else
     echo 'no arguments'
   end
+  echo ''
+  set_color green
+  echo 'SUCCESS!'
+  set_color normal
+  echo 'You can find your PR at:' (set_color -u blue; pbpaste)
+  set_color normal
+  echo '(That URL has been copied to your clipboard, as well)'
+  echo ''
 end

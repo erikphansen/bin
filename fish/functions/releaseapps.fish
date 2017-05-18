@@ -23,8 +23,11 @@ function releaseapps -d "Quickly make release branches, push them to github, cre
     git checkout develop
     git branch -D release_$timestamp
     echo ''
+    set_color green
     echo 'SUCCESS!'
-    echo 'You can find your PR at:' (pbpaste)
+    set_color normal
+    echo 'You can find your PR at:' (set_color -u blue; pbpaste)
+    set_color normal
     echo '(That URL has been copied to your clipboard, as well)'
     echo ''
   end
