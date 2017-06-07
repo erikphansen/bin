@@ -4,6 +4,9 @@ alias .... "cd ../../.."
 alias ..... "cd ../../../.."
 alias cdd "cd -"
 
+# safer rm
+alias rm "trash"
+
 # ls better
 alias l "ls -hal"
 alias la "ls -aF"
