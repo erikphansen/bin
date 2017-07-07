@@ -8,7 +8,7 @@ alias cdd "cd -"
 alias rm "trash"
 
 # ls better
-alias l "ls -hal"
+alias l "ls -halp"
 alias la "ls -aF"
 alias ld "ls -ld"
 alias ll "ls -l"
