@@ -39,6 +39,7 @@ function fish_prompt
 
   # Line 1
   echo
+  echo
   echo -ns $blue (__parse_current_folder) (__fish_git_prompt " (%s)")
   echo
 
