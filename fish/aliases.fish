@@ -51,6 +51,8 @@ alias gfr "gf; and grom"
 alias gl "git log"
 
 # helpers
+alias h "history"
+alias hd "history delete"
 alias me "echo (whoami)@(hostname)"
 alias refreshfinder "sudo find / -name .DS_Store -delete; killall Finder"
 alias ax "chmod a+x"
