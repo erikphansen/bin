@@ -24,13 +24,11 @@ alias tt "stree" # SourceTree
 # common directories
 alias aps "cd ~/Library/Application\ Support"
 alias bin "cd ~/bin"
-alias cf "cd ~/codefellows"
 alias db "cd ~/Dropbox"
 alias desk "cd ~/Desktop"
 alias down "cd ~/Downloads"
 alias kar "cd ~/Dropbox/karabiner; and e . core.xml"
 alias p "cd ~/projects"
-alias pcs "cd ~/pcs"
 alias pp "cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User; and subl ."
 alias work "cd ~/projects-work"
 
