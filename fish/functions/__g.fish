@@ -1,4 +1,4 @@
-function g -d "`git` or `git status`"
+function __g -d "`git` or `git status`"
   if count $argv > /dev/null
     git $argv
   else

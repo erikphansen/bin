@@ -34,21 +34,25 @@ alias work "cd ~/projects-work"
 
 # git helpers
 alias git "hub"
-alias pull "git pull"
-alias push "git push"
-alias amend "git commit --amend --no-edit" # amends to last commit and reuses last commit message
+alias g "git"
+alias gs "git status"
+alias gl "git log"
 alias gf "git fetch"
+alias gfp "git fetch; and git remote prune origin"
+alias gb "git branch"
+alias gd "git checkout develop"
+alias gm "git checkout master"
+alias gco "git checkout"
 alias gdd "git diff"
 alias gddd "git difftool"
 alias gcm "git commit -v -m"
-alias gb "git branch"
-alias gco "git checkout"
-alias gm "git checkout master"
-alias gd "git checkout develop"
 alias grom "git rebase origin/master"
 alias grod "git rebase origin/develop"
 alias gfr "gf; and grom"
-alias gl "git log"
+alias gfd "gf; and grod"
+alias pull "git pull"
+alias push "git push"
+alias amend "git commit --amend --no-edit" # amends to last commit and reuses last commit message
 
 # helpers
 alias h "history"
