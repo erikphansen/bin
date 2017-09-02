@@ -2,7 +2,12 @@
 alias ... "cd ../.."
 alias .... "cd ../../.."
 alias ..... "cd ../../../.."
-alias cdd "cd -"
+# From the Fish docs:
+# In fish versions prior to 2.5.0 it was possible to create a function named -
+# that would do cd -. Changes in the 2.5.0 release included several bug fixes
+# that enforce the rule that a bare hyphen is not a valid function (or variable)
+# name. However, you can achieve the same effect via an abbreviation:
+abbr -a -- - 'cd -'
 
 # safer rm
 alias rm "trash"
