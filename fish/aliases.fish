@@ -21,7 +21,7 @@ alias lt "and pwd; and set_color green; and echo '------NEWEST--'; and set_color
 alias ltr "and pwd; and set_color red; and echo '------OLDEST--'; and set_color normal; and ls -Art1; and set_color green; and echo '------NEWEST--'; and set_color normal"
 
 # apps
-alias e "atom"
+alias e "code"
 alias e. "e ."
 alias ee "e ."
 alias tt "stree" # SourceTree
