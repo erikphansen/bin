@@ -63,10 +63,15 @@ alias amend "git commit --amend --no-edit" # amends to last commit and reuses la
 # helpers
 alias h "history"
 alias hd "history delete"
+alias doh "history delete (history -n 1 | tr -s ' ' \n)"
+alias oops "history delete (history -n 1 | tr -s ' ' \n)"
 alias me "echo (whoami)@(hostname)"
+# Reset Finder view settings
 alias refreshfinder "sudo find / -name .DS_Store -delete; killall Finder"
 alias ax "chmod a+x"
-alias zzz "pmset -x sleepnow"
+alias zzz "pmset sleepnow"
+# List all top-level global node modules
+alias ng "npm list -g --depth=0"
 # get the fingerprint of a public SSH key
 alias fingerprint "ssh-keygen -E md5 -lf"
 # list TODO/FIX lines from the current project
@@ -95,7 +100,9 @@ alias tmlog "syslog -F '\$Time \$Message' -k Sender com.apple.backupd-auto -k Ti
 # create a Taskpaper todo file in the current folder
 alias tp "touch todo.taskpaper; and open -a 'Taskpaper' todo.taskpaper"
 
-# Womply specific
+###################
+# Womply specific #
+###################
 alias w "cd ~/womply"
 alias nav "cd ~/womply/gmd-nav"
 alias insights "cd ~/womply/gmd-insights"
