@@ -1,7 +1,10 @@
 *~
 .DS_Store
+.DS_Store?
+.Spotlight-V100
 Icon
 
 xcuserdata
 node_modules
 bower_components
+Thumbs.db
