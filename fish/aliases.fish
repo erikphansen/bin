@@ -24,7 +24,8 @@ alias ltr "and pwd; and set_color red; and echo '------OLDEST--'; and set_color 
 alias e "code"
 alias e. "e ."
 alias ee "e ."
-alias tt "stree" # SourceTree
+# alias tt "stree" # SourceTree
+alias tt "gittower ." # Open current folder in Tower
 
 # common directories
 alias aps "cd ~/Library/Application\ Support"
