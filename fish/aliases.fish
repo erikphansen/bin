@@ -1,4 +1,5 @@
 # jump up directories faster
+# `..` works as `cd ..` out of the box. Thanks Fish shell!
 alias ... "cd ../.."
 alias .... "cd ../../.."
 alias ..... "cd ../../../.."
