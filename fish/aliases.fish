@@ -53,7 +53,7 @@ alias gc "git commit"
 alias gco "git checkout"
 alias g- "git checkout -"
 alias gdd "git diff"
-alias gddd "git difftool"
+alias gk "git difftool" # open diffs in Kaleidoscope
 alias gcm "git commit -v -m"
 alias grom "git rebase origin/master"
 alias grod "git rebase origin/develop"
