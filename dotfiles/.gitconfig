@@ -9,6 +9,8 @@
   l = log
   a = add
   aa = add .
+  dt = difftool
+  ri = rebase -i
 [color]
   diff = auto
   status = auto
