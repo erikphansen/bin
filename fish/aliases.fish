@@ -107,5 +107,7 @@ alias tp "touch todo.taskpaper; and open -a 'Taskpaper' todo.taskpaper"
 ###################
 alias w "cd ~/womply"
 alias nav "cd ~/womply/gmd-nav"
+alias wcjs "cd ~/womply/womply-common-js"
+alias et "cd ~/womply/womply-email-templates"
 alias insights "cd ~/womply/gmd-insights"
 alias releasebranch "git checkout -b release_(date +'%Y%m%d%H%M%S') develop"
