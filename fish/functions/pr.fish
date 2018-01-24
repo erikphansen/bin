@@ -7,7 +7,7 @@ function pr -d 'Quickly make a PR of the current branch into `develop` or the br
   end
   git push
   hub pull-request -b $targetbranch -F msg.txt | pbcopy
-  rm msg.txt
+  command rm msg.txt
   echo ''
   set_color -o green
   echo 'SUCCESS!'
