@@ -1,6 +1,6 @@
 function releaseapps -d "Quickly make release branches, push them to github, create PRs, and open the PR pages in your browser"
   # set default vars in case no args are passed or $WOMPLY_DIR isn't set
-  set dirs ads-ui angular-reputation-defense-ui bizshield-ui customer-analytics-ui customer-directory-ui feedback-ui gmd-insights launchpad-ui messenger-ui more-reviews-ui reputation-defense-admin-ui signup-ui vault-ui
+  set dirs ads-ui angular-reputation-defense-ui bizshield-ui customer-analytics-ui customer-directory-ui feedback-ui gmd-insights launchpad-ui marketing-automation-ui messenger-ui more-reviews-ui reputation-defense-admin-ui signup-ui vault-ui
   set project_dir "$HOME/womply"
   #
   if test $WOMPLY_DIR
