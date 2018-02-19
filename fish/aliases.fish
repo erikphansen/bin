@@ -54,6 +54,8 @@ alias g- "git checkout -"
 alias gdd "git diff"
 alias gk "git difftool" # open diffs in Kaleidoscope
 alias gcm "git commit -v -m"
+alias grm "git rebase master"
+alias grd "git rebase develop"
 alias grom "git rebase origin/master"
 alias grod "git rebase origin/develop"
 alias gfr "gf; and grom"
