@@ -1,6 +1,6 @@
 [user]
-  name = Erik P. Hansen
-  email = eph@erikphansen.com
+	name = Erik P. Hansen
+	email = eph@erikphansen.com
 [alias]
   co = checkout
   s = status
@@ -11,6 +11,7 @@
   aa = add .
   dt = difftool
   ri = rebase -i
+  rid = rebase -i develop
 [color]
   diff = auto
   status = auto
