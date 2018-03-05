@@ -51,34 +51,6 @@
                         ]
                     },
                     {
-                        "description": "Hold left ⇧ to ⌃C in iTerm",
-                        "manipulators": [
-                            {
-                                "type": "basic",
-                                "from": {
-                                    "key_code": "left_shift"
-                                },
-                                "to_if_held_down": [
-                                    {
-                                        "key_code": "c",
-                                        "modifiers": [
-                                            "left_control"
-                                        ]
-                                    }
-                                ],
-                                "conditions": [
-                                    {
-                                        "type": "frontmost_application_if",
-                                        "bundle_identifiers": [
-                                            "com.googlecode.iterm2",
-                                            "com.apple.Terminal"
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
                         "description": "Press both Shift keys at the same time to toggle Caps Lock",
                         "manipulators": [
                             {
