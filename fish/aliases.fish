@@ -94,7 +94,7 @@ alias mem "top -o rsize"
 # copy the working directory path
 alias cpwd "pwd | tr -d '\n' | pbcopy"
 # Get your current public IP
-alias ip "curl ipv4.icanhazip.com; and curl ipv6.icanhazip.com"
+alias ip "ipconfig getifaddr en0; and curl ipv4.icanhazip.com; and curl ipv6.icanhazip.com"
 # recursively delete Dropbox conflicted files
 # TODO: this `find` command fails in fish
 alias rmdbc "find . -name *\ \(*conflicted* -exec rm {} \;"
