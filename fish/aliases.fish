@@ -25,7 +25,8 @@ alias ltr "and pwd; and set_color red; and echo '------OLDEST--'; and set_color 
 alias e "code"
 alias e. "e ."
 alias ee "e ."
-alias tt "stree ." # SourceTree
+alias tt "gittower ." # Tower
+# alias tt "stree ." # SourceTree
 # alias tt "fork status" # Open current repo in Fork's commit view
 
 # common directories
