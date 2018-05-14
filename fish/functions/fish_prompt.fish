@@ -1,6 +1,11 @@
 function fish_prompt
   # Cache exit status
   set -l last_status $status
+  set -l error_code
+  if test $last_status -ne 0
+    set error_code "$last_status "
+  end
+
 
   # Just calculate these once, to save a few cycles when displaying the prompt
   if not set -q __fish_prompt_hostname
@@ -25,6 +30,7 @@ function fish_prompt
   set -l limegreen (set_color 87ff00)
   set -l purple (set_color af5fff)
   set -l red (set_color red)
+  set -l red_bold (set_color -o red)
 
   # Configure __fish_git_prompt
   set -g __fish_git_prompt_char_stateseparator ' '
@@ -44,5 +50,5 @@ function fish_prompt
   echo
 
   # Line 2
-  echo -ns $red $__fish_prompt_char $normal
+  echo -ns $red_bold $error_code $__fish_prompt_char $normal
 end

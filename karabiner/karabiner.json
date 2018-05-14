@@ -82,6 +82,13 @@
                         "description": "👨‍🔬 Smash `sd` together to toggle VIM mode",
                         "manipulators": [
                             {
+                                "conditions": [
+                                    {
+                                        "name": "VIM_MODE",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    }
+                                ],
                                 "from": {
                                     "simultaneous": [
                                         {
@@ -100,16 +107,16 @@
                                         }
                                     }
                                 ],
+                                "type": "basic"
+                            },
+                            {
                                 "conditions": [
                                     {
                                         "name": "VIM_MODE",
                                         "type": "variable_if",
-                                        "value": 0
+                                        "value": 1
                                     }
                                 ],
-                                "type": "basic"
-                            },
-                            {
                                 "from": {
                                     "simultaneous": [
                                         {
@@ -126,13 +133,6 @@
                                             "name": "VIM_MODE",
                                             "value": 0
                                         }
-                                    }
-                                ],
-                                "conditions": [
-                                    {
-                                        "name": "VIM_MODE",
-                                        "type": "variable_if",
-                                        "value": 1
                                     }
                                 ],
                                 "type": "basic"
@@ -346,6 +346,7 @@
             ],
             "virtual_hid_keyboard": {
                 "caps_lock_delay_milliseconds": 0,
+                "country_code": 0,
                 "keyboard_type": "ansi"
             }
         }
