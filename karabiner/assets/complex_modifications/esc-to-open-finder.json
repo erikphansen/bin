@@ -1,0 +1,26 @@
+{
+  "title": "Tap ESC => Open Finder",
+  "rules": [
+    {
+      "description": "Tap ESC => Open Finder",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "f19",
+            "modifiers": {
+              "optional": [
+                "right_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a Finder"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}

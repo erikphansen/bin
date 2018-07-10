@@ -1,8 +1,8 @@
 {
-  "title": "Vi Style Arrows",
+  "title": "Hyper-VIM mode",
   "rules": [
     {
-      "description": "Change Control+h/j/k/l to Arrows",
+      "description": "Hyper + HJKL | ← ↓ ↑ →",
       "manipulators": [
         {
           "type": "basic",
@@ -10,7 +10,10 @@
             "key_code": "h",
             "modifiers": {
               "mandatory": [
-                "left_control"
+                "left_control",
+                "left_shift",
+                "left_option",
+                "left_command"
               ]
             }
           },
@@ -26,7 +29,10 @@
             "key_code": "j",
             "modifiers": {
               "mandatory": [
-                "left_control"
+                "left_control",
+                "left_shift",
+                "left_option",
+                "left_command"
               ]
             }
           },
@@ -42,7 +48,10 @@
             "key_code": "k",
             "modifiers": {
               "mandatory": [
-                "left_control"
+                "left_control",
+                "left_shift",
+                "left_option",
+                "left_command"
               ]
             }
           },
@@ -58,7 +67,10 @@
             "key_code": "l",
             "modifiers": {
               "mandatory": [
-                "left_control"
+                "left_control",
+                "left_shift",
+                "left_option",
+                "left_command"
               ]
             }
           },
