@@ -11,8 +11,8 @@
 #   set_color normal
 # end
 
-function fish_right_prompt
-  set_color -o green
-  echo "⬢ "(node -v)
-  set_color normal
-end
+# function fish_right_prompt
+#   set_color -o black
+#   echo "⬢ "(node -v)
+#   set_color normal
+# end

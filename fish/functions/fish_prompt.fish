@@ -3,7 +3,7 @@ function fish_prompt
   set -l last_status $status
   set -l error_code
   if test $last_status -ne 0
-    set error_code "$last_status "
+    set error_code "($last_status) "
   end
 
 
