@@ -12,6 +12,8 @@ abbr -a -- - 'cd -'
 
 # safer rm
 alias rm "trash"
+# ...but give us easy access to the real `rm` command
+alias rmm "command rm"
 
 # ls better
 alias l "ls -halp"
@@ -23,10 +25,13 @@ alias ltr "and pwd; and set_color red; and echo '------OLDEST--'; and set_color 
 
 # apps
 alias e "code"
+# alias e "mate"
+# alias e "subl"
+# alias e "atom"
 alias e. "e ."
 alias ee "e ."
-alias tt "gittower ." # Tower
-# alias tt "stree ." # SourceTree
+# alias tt "gittower ." # Tower
+alias tt "stree ." # SourceTree
 # alias tt "fork status" # Open current repo in Fork's commit view
 
 # common directories
@@ -42,39 +47,39 @@ alias work "cd ~/projects-work"
 
 # git helpers
 alias git "hub"
+alias amend "git commit --amend --no-edit" # amends to last commit and reuses last commit message
 alias g "git"
-alias gs "git status"
-alias gl "git log"
-alias gff "git fetch"
-alias gf "git fetch; and git remote prune origin"
+alias g- "git checkout -" # check out the branch you were just on
 alias gb "git branch"
-alias gd "git checkout develop"
-alias gm "git checkout master"
 alias gc "git commit"
+alias gcm "git commit -v -m" # usage: gcm 'this is my commit message'
 alias gco "git checkout"
-alias g- "git checkout -"
+alias gd "git checkout develop"
 alias gdd "git diff"
-alias gk "git difftool" # open diffs in Kaleidoscope
-alias gcm "git commit -v -m"
-alias grm "git rebase master"
-alias grd "git rebase develop"
-alias grom "git rebase origin/master"
-alias grod "git rebase origin/develop"
-alias gfr "gf; and grom"
+alias gf "git fetch; and git remote prune origin"
 alias gfd "gf; and grod"
+alias gff "git fetch"
+alias gfr "gf; and grom"
+alias gk "git difftool" # open diffs in Kaleidoscope
+alias gl "git log"
+alias gm "git checkout master"
+alias grd "git rebase develop"
+alias grm "git rebase master"
+alias grod "git rebase origin/develop"
+alias grom "git rebase origin/master"
+alias gs "git status"
 alias pull "git pull"
 alias push "git push"
-alias amend "git commit --amend --no-edit" # amends to last commit and reuses last commit message
 
 # helpers
+alias doh "history delete (history -n 1 | tr -s ' ' \n)"
 alias h "history"
 alias hd "history delete"
-alias doh "history delete (history -n 1 | tr -s ' ' \n)"
-alias oops "history delete (history -n 1 | tr -s ' ' \n)"
 alias me "echo (whoami)@(hostname)"
+alias oops "history delete (history -n 1 | tr -s ' ' \n)"
+alias ax "chmod a+x"
 # Reset Finder view settings
 alias refreshfinder "sudo find / -name .DS_Store -delete; killall Finder"
-alias ax "chmod a+x"
 alias zzz "pmset sleepnow"
 # List all top-level global node modules
 alias ng "npm list -g --depth=0"
@@ -90,6 +95,7 @@ alias idrive "cd ~/Library/Mobile\ Documents/com~apple~CloudDocs"
 alias ungit "find . -name '.git' -exec rm -rf '{}' \;"
 # Remove svn from a projects
 alias unsvn "find . -name '.svn' -exec rm -rf '{}' \;"
+# top
 alias cpu "top -o cpu"
 alias mem "top -o rsize"
 # copy the working directory path
@@ -105,6 +111,8 @@ alias stfu "osascript -e 'set volume output muted true'"
 alias tmlog "syslog -F '\$Time \$Message' -k Sender com.apple.backupd-auto -k Time ge -30m | tail -n 1"
 # create a Taskpaper todo file in the current folder
 alias tp "touch todo.taskpaper; and open -a 'Taskpaper' todo.taskpaper"
+# git status telling you files have `typechange`s?
+alias fixtc "git status | grep typechange | awk ‘{print $2}’ | xargs git checkout"
 
 ###################
 # Womply specific #
@@ -114,19 +122,19 @@ alias nav "cd ~/womply/gmd-nav"
 alias wcjs "cd ~/womply/womply-common-js"
 alias et "cd ~/womply/womply-email-templates"
 
-alias insights "cd ~/womply/gmd-insights"
+alias ads "cd ~/womply/ads-ui"
 alias bizshield "cd ~/womply/bizshield-ui"
-alias customerpulse "cd ~/womply/customer-analytics-ui"
 alias customeranalytics "cd ~/womply/customer-analytics-ui"
 alias customerdirectory "cd ~/womply/customer-directory-ui"
-alias marketingautomation "cd ~/womply/marketing-automation-ui"
 alias customerengagement "cd ~/womply/marketing-automation-ui"
-alias repdef "cd ~/womply/angular-reputation-defense-ui"
-alias launchpad "cd ~/womply/launchpad-ui"
-alias vault "cd ~/womply/vault-ui"
+alias customerpulse "cd ~/womply/customer-analytics-ui"
 alias feedback "cd ~/womply/feedback-ui"
-alias ads "cd ~/womply/ads-ui"
+alias insights "cd ~/womply/gmd-insights"
+alias launchpad "cd ~/womply/launchpad-ui"
+alias marketingautomation "cd ~/womply/marketing-automation-ui"
 alias messenger "cd ~/womply/messenger-ui"
+alias repdef "cd ~/womply/angular-reputation-defense-ui"
 alias signup "cd ~/womply/signup-ui"
+alias vault "cd ~/womply/vault-ui"
 
 alias releasebranch "git checkout -b release_(date +'%Y%m%d%H%M%S') develop"
