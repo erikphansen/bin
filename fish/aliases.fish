@@ -112,29 +112,10 @@ alias tmlog "syslog -F '\$Time \$Message' -k Sender com.apple.backupd-auto -k Ti
 # create a Taskpaper todo file in the current folder
 alias tp "touch todo.taskpaper; and open -a 'Taskpaper' todo.taskpaper"
 # git status telling you files have `typechange`s?
-alias fixtc "git status | grep typechange | awk ‘{print $2}’ | xargs git checkout"
+alias fixtc "git status | grep typechange | awk '{print $2}' | xargs git checkout"
 
-###################
-# Womply specific #
-###################
-alias w "cd ~/womply"
-alias nav "cd ~/womply/gmd-nav"
-alias wcjs "cd ~/womply/womply-common-js"
-alias et "cd ~/womply/womply-email-templates"
-
-alias ads "cd ~/womply/ads-ui"
-alias bizshield "cd ~/womply/bizshield-ui"
-alias customeranalytics "cd ~/womply/customer-analytics-ui"
-alias customerdirectory "cd ~/womply/customer-directory-ui"
-alias customerengagement "cd ~/womply/marketing-automation-ui"
-alias customerpulse "cd ~/womply/customer-analytics-ui"
-alias feedback "cd ~/womply/feedback-ui"
-alias insights "cd ~/womply/gmd-insights"
-alias launchpad "cd ~/womply/launchpad-ui"
-alias marketingautomation "cd ~/womply/marketing-automation-ui"
-alias messenger "cd ~/womply/messenger-ui"
-alias repdef "cd ~/womply/angular-reputation-defense-ui"
-alias signup "cd ~/womply/signup-ui"
-alias vault "cd ~/womply/vault-ui"
-
-alias releasebranch "git checkout -b release_(date +'%Y%m%d%H%M%S') develop"
+####################
+#  AdHoc specific  #
+####################
+alias ad "cd ~/adhoc"
+alias vw "cd ~/adhoc/vets-website"
