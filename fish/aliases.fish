@@ -114,6 +114,12 @@ alias tp "touch todo.taskpaper; and open -a 'Taskpaper' todo.taskpaper"
 # git status telling you files have `typechange`s?
 alias fixtc "git status | grep typechange | awk '{print $2}' | xargs git checkout"
 
+## default browser: These depend on https://github.com/kerma/defaultbrowser
+# sets Safari Tech Preview as the default browser
+alias bs "defaultbrowser safaritechnologypreview"
+# sets Firefox as the default browser
+alias bff "defaultbrowser firefox"
+
 ####################
 #  AdHoc specific  #
 ####################
