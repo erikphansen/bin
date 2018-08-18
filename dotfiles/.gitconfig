@@ -12,6 +12,7 @@
   dt = difftool
   ri = rebase -i
   rid = rebase -i develop
+  rim = rebase -i master
 [color]
   diff = auto
   status = auto
@@ -19,7 +20,7 @@
   ui = auto
   interactive = auto
 [core]
-	excludesfile = /Users/erik-adhoc/.gitignore_global
+	excludesfile = ~/.gitignore_global
   autocrlf = input
   editor = vim
 [difftool]
@@ -48,5 +49,3 @@
   clean = git-lfs clean %f
   smudge = git-lfs smudge %f
   required = true
-[commit]
-	template = ~/.stCommitMsg
