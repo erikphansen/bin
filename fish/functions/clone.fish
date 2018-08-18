@@ -13,6 +13,7 @@ function clone -d 'clone repo and attempt to `cd` into its new directory'
     # then grab the last element in that array
     # then split on . and grab the first element in that resulting array
     set newdir (string split '/' $argv[1])
+    # TODO: trim off the trailing .git instead of splitting; some repo names actually have a period in them (json-schema-org.github.io)
     set newdir (string split '.' $newdir[2])
     set newdir $newdir[1]
   end
