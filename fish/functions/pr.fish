@@ -2,16 +2,16 @@ function pr -d 'Quickly make a PR of the current branch into `develop` or the br
   # Reuse the last commit message as the PR message
   git log -1 --pretty=%B > last_commit_message.txt
   set -l basebranch 'develop'
-  set -l headbranch (git rev-parse --abbrev-ref HEAD)
   if count $argv > /dev/null
     set basebranch $argv[1]
   end
+  set -l headbranch (git rev-parse --abbrev-ref HEAD)
   echo Pushing changes in `{$headbranch}` up to remote...
-  git push
+  git push -u
   echo ''
   echo Using `hub` to make a PR from `{$headbranch}` into `{$basebranch}`...
   set pr_url (hub pull-request -b $basebranch -F last_commit_message.txt)
-  # delete the temp file using the built in `rm` not my `rm` alias
+  # delete the temp file using the built in `rm` not my `rm` alias to keep from polluting the macOS trashcan
   command rm last_commit_message.txt
   # if the length of $pr_url is 0...
   if test -z $pr_url
