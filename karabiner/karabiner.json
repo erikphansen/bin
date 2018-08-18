@@ -287,11 +287,11 @@
                         ]
                     },
                     {
-                        "description": "Hyper + Right ⌘ => Open Things",
+                        "description": "Hyper + Right ⇧ => Open Things",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "right_command",
+                                    "key_code": "right_shift",
                                     "modifiers": {
                                         "mandatory": [
                                             "left_control",
