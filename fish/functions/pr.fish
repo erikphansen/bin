@@ -10,7 +10,14 @@ function pr -d 'Quickly make a PR of the current branch into `develop` or the br
   git push -u
   echo ''
   echo Using `hub` to make a PR from `{$headbranch}` into `{$basebranch}`...
-  set pr_url (hub pull-request -b $basebranch -F last_commit_message.txt)
+
+  # Add the contents of the PULL_REQUEST_TEMPLATE.md if it exists
+  # there is an error in opening this in the editor for tweaking before posting
+  # so the PR message needs to be updated on github after creating the PR :(
+  if test -f PULL_REQUEST_TEMPLATE.md
+    cat PULL_REQUEST_TEMPLATE.md >> last_commit_message.txt
+  else
+
   # delete the temp file using the built in `rm` not my `rm` alias to keep from polluting the macOS trashcan
   command rm last_commit_message.txt
   # if the length of $pr_url is 0...
