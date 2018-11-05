@@ -13,6 +13,7 @@
   ri = rebase -i
   rid = rebase -i develop
   rim = rebase -i master
+  graph = log --all --decorate --oneline --graph
 [color]
   diff = auto
   status = auto
@@ -46,6 +47,7 @@
 [push]
   default = current
 [filter "lfs"]
-  clean = git-lfs clean %f
-  smudge = git-lfs smudge %f
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
   required = true
+  process = git-lfs filter-process
