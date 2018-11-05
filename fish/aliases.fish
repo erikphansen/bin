@@ -31,8 +31,8 @@ alias e "code"
 alias e. "e ."
 alias ee "e ."
 # alias tt "gittower ." # Tower
-alias tt "stree ." # SourceTree
-# alias tt "fork status" # Open current repo in Fork's commit view
+# alias tt "stree ." # SourceTree
+alias tt "fork status" # Open current repo in Fork's commit view
 
 # common directories
 alias aps "cd ~/Library/Application\ Support"
