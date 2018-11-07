@@ -23,6 +23,10 @@ alias ll "ls -l"
 alias lt "and pwd; and set_color green; and echo '------NEWEST--'; and set_color normal; and ls -At1; and set_color red; and echo '------OLDEST--'; and set_color normal"
 alias ltr "and pwd; and set_color red; and echo '------OLDEST--'; and set_color normal; and ls -Art1; and set_color green; and echo '------NEWEST--'; and set_color normal"
 
+# bat is better than `cat` or `less`
+alias cat "bat"
+alias less "bat"
+
 # apps
 alias e "code"
 # alias e "mate"
