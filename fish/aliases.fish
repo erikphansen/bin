@@ -26,6 +26,7 @@ alias ltr "and pwd; and set_color red; and echo '------OLDEST--'; and set_color 
 # bat is better than `cat` or `less`
 alias cat "bat"
 alias less "bat"
+alias c "cat"
 
 # apps
 alias e "code"
