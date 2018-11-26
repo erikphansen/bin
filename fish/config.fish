@@ -11,6 +11,7 @@
 # set fish_color_param cyan
 # set fish_color_quote --italics green
 
+source ~/bin/fish/private.fish
 source ~/bin/fish/init-rbenv.fish
 source ~/bin/fish/aliases.fish
 
