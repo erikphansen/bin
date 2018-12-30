@@ -132,3 +132,7 @@ alias bcc "defaultbrowser chrome"
 ####################
 alias ad "cd ~/adhoc"
 alias vw "cd ~/adhoc/vets-website"
+# 1. Reset Docker without confirmation.
+# 2. Notify when `make rebuild` completes. (Install `noti` with `brew install noti`)
+# 3. Run `make up` to start up the API
+alias rebuild-api "docker system prune -f; and noti make rebuild; and make up"
