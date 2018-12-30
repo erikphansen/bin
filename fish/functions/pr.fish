@@ -4,7 +4,10 @@ function pr -d 'Quickly make a PR of the current branch into `develop` or the br
 
   # Add the contents of the PULL_REQUEST_TEMPLATE.md if it exists
   if test -f PULL_REQUEST_TEMPLATE.md
-    cat PULL_REQUEST_TEMPLATE.md >> pr_message.txt
+    command cat PULL_REQUEST_TEMPLATE.md >> pr_message.txt
+    # TODO: open pr_message.txt in the editor and wait before continuing
+  else if test -f .github/PULL_REQUEST_TEMPLATE.md
+    command cat .github/PULL_REQUEST_TEMPLATE.md >> pr_message.txt
     # TODO: open pr_message.txt in the editor and wait before continuing
   end
 
