@@ -81,7 +81,7 @@ alias doh "history delete (history -n 1 | tr -s ' ' \n)"
 alias h "history"
 alias hd "history delete"
 alias me "echo (whoami)@(hostname)"
-alias oops "history delete (history -n 1 | tr -s ' ' \n)"
+alias oops "history delete \"(command echo history[1])\""
 alias ax "chmod a+x"
 # Reset Finder view settings
 alias refreshfinder "sudo find / -name .DS_Store -delete; killall Finder"
