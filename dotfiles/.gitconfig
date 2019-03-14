@@ -13,7 +13,8 @@
   ri = rebase -i
   rid = rebase -i develop
   rim = rebase -i master
-  graph = log --all --decorate --oneline --graph
+  graph = log --all --decorate --oneline --graph --date=relative
+  graph2 = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%ae>%Creset' --abbrev-commit --date=relative
 [color]
   diff = auto
   status = auto
@@ -31,6 +32,8 @@
 	path =
 [difftool "Kaleidoscope"]
   cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool "vscode"]
+  cmd = code \"$LOCAL\" \"$REMOTE\" --diff --wait
 [mergetool "sourcetree"]
   cmd = /usr/local/bin/ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
   trustExitCode = true
