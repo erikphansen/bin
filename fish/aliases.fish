@@ -95,7 +95,7 @@ alias todos "ack -n --nogroup '(TODO|FIX(ME)?):'"
 # open current path in Finder
 alias f "open -a Finder ./"
 # cd into the iCloud Drive
-alias idrive "cd ~/Library/Mobile\ Documents/com~apple~CloudDocs"
+alias icloud "cd ~/Library/Mobile\ Documents/com~apple~CloudDocs"
 # Remove git from a project
 alias ungit "find . -name '.git' -exec rm -rf '{}' \;"
 # Remove svn from a projects
