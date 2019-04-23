@@ -73,7 +73,7 @@ alias grm "git rebase master"
 alias grod "git rebase origin/develop"
 alias grom "git rebase origin/master"
 alias gs "git status"
-alias pull "git pull"
+alias pull "git pull; and git remote prune origin"
 alias push "git push"
 
 # helpers
