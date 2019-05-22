@@ -77,6 +77,7 @@ alias pull "git pull; and git remote prune origin"
 alias push "git push"
 
 # helpers
+alias ytdl "noti youtube-dl"
 alias doh "history delete (history -n 1 | tr -s ' ' \n)"
 alias h "history"
 alias hd "history delete"
