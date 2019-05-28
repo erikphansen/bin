@@ -77,7 +77,6 @@ alias pull "git pull; and git remote prune origin"
 alias push "git push"
 
 # helpers
-alias ytdl "noti youtube-dl"
 alias doh "history delete (history -n 1 | tr -s ' ' \n)"
 alias h "history"
 alias hd "history delete"
@@ -120,14 +119,6 @@ alias tp "touch todo.taskpaper; and open -a 'Taskpaper' todo.taskpaper"
 # git status telling you files have `typechange`s?
 alias fixtc "git status | grep typechange | awk '{print $2}' | xargs git checkout"
 
-## default browser: These depend on https://github.com/kerma/defaultbrowser
-# sets Safari Tech Preview as the default browser
-alias bss "defaultbrowser safaritechnologypreview"
-# sets Firefox as the default browser
-alias bff "defaultbrowser firefox"
-# sets Chrome as the default browser
-alias bcc "defaultbrowser chrome"
-
 ####################
 #  AdHoc specific  #
 ####################
@@ -137,3 +128,7 @@ alias vw "cd ~/adhoc/vets-website"
 # 2. Notify when `make rebuild` completes. (Install `noti` with `brew install noti`)
 # 3. Run `make up` to start up the API
 alias rebuild-api "docker system prune -f; and noti make rebuild; and make up"
+
+# use noti to post a local notification for these long-running events
+alias gifify "noti gifify"
+alias ytdl "noti youtube-dl"
