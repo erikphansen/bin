@@ -11,7 +11,7 @@ function pr -d 'Quickly make a PR of the current branch into `develop` or the br
     # TODO: open pr_message.txt in the editor and wait before continuing
   end
 
-  set -l basebranch 'develop'
+  set -l basebranch 'master'
   if count $argv > /dev/null
     set basebranch $argv[1]
   end
