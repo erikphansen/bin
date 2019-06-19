@@ -19,7 +19,7 @@
           },
           "to": [
             {
-              "shell_command": "open btt://execute_assigned_actions_for_trigger/?uuid=E422E0FA-91D2-4BD7-8937-F8D9C3F94A28"
+              "shell_command": "osascript -e 'tell application \"BetterTouchTool\" to execute_assigned_actions_for_trigger \"BBD69D51-4B24-487A-AC39-1CE2BC623FCE\"'"
             }
           ]
         }
