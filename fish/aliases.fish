@@ -14,6 +14,7 @@ abbr -a -- - 'cd -'
 alias rm "trash"
 # ...but give us easy access to the real `rm` command
 alias rmm "command rm"
+alias rrm "command rm"
 
 # ls better
 alias l "ls -halp"
