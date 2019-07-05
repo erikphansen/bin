@@ -1,0 +1,22 @@
+{
+  "title": "Disable R⌘ + Space",
+  "rules": [
+    {
+      "description": "Disable R⌘ + Space for UHK training",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": { "mandatory": ["right_command"] }
+          },
+          "to": [
+            {
+              "key_code": "vk_none"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
