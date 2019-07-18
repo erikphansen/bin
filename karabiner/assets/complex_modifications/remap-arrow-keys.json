@@ -16,6 +16,16 @@
             }
           ]
         }
+      ],
+      "conditions": [
+        {
+          "type": "device_unless",
+          "identifiers": [
+            {
+              "vendor_id": 7504
+            }
+          ]
+        }
       ]
     },
     {
