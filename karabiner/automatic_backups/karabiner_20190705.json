@@ -50,7 +50,7 @@
                         ]
                     },
                     {
-                        "description": "Hyper VIM! Hyper + HJKL | ← ↓ ↑ →",
+                        "description": "Hyper + HJKL | ← ↓ ↑ →",
                         "manipulators": [
                             {
                                 "from": {
@@ -355,6 +355,27 @@
                                             "left_command",
                                             "left_shift"
                                         ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Remap left arrow key to control",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "left_arrow",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_control"
                                     }
                                 ],
                                 "type": "basic"

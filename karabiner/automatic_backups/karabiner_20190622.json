@@ -50,11 +50,11 @@
                         ]
                     },
                     {
-                        "description": "Hyper VIM! Hyper + HJKL | ← ↓ ↑ →",
+                        "description": "Hyper + IJKL | ↑ ← ↓ →",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "h",
+                                    "key_code": "i",
                                     "modifiers": {
                                         "mandatory": [
                                             "left_control",
@@ -66,7 +66,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "left_arrow"
+                                        "key_code": "up_arrow"
                                     }
                                 ],
                                 "type": "basic"
@@ -85,7 +85,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "down_arrow"
+                                        "key_code": "left_arrow"
                                     }
                                 ],
                                 "type": "basic"
@@ -104,7 +104,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "up_arrow"
+                                        "key_code": "down_arrow"
                                     }
                                 ],
                                 "type": "basic"
@@ -355,6 +355,27 @@
                                             "left_command",
                                             "left_shift"
                                         ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Remap left arrow key to control",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "left_arrow",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_control"
                                     }
                                 ],
                                 "type": "basic"
