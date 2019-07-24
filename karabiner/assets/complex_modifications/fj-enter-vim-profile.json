@@ -1,0 +1,33 @@
+{
+  "title": "Press `f` and `j` together to enter VIM profile",
+  "rules": [
+    {
+      "description": "Press `f` and `j` together to enter VIM profile",
+      "manipulators": [
+        {
+          "from": {
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            },
+            "simultaneous": [
+              {
+                "key_code": "f"
+              },
+              {
+                "key_code": "j"
+              }
+            ]
+          },
+          "to": [
+            {
+              "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'VIM profile'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "⇪ to enter Default profile",
+  "rules": [
+    {
+      "description": "⇪ to enter Default profile",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "caps_lock",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'Default profile'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}
