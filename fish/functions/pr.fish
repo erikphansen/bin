@@ -20,7 +20,7 @@ function pr -d 'Quickly make a PR of the current branch into `develop` or the br
   git push -u
   echo ''
   echo Using `hub` to make a PR from `{$headbranch}` into `{$basebranch}`...
-  set pr_url (hub pull-request -b $basebranch -F pr_message.txt)
+  set pr_url (hub pull-request -d -b $basebranch -F pr_message.txt)
 
   # delete the temp file using the built in `rm` not my `rm` alias to keep from polluting the macOS trashcan
   command rm pr_message.txt
