@@ -25,7 +25,10 @@
               "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'VIM profile'"
             }
           ],
-          "type": "basic"
+          "type": "basic",
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 50
+          }
         }
       ]
     }

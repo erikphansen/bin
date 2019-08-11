@@ -131,34 +131,6 @@
                         ]
                     },
                     {
-                        "description": "Press both Shift keys at the same time to toggle Caps Lock",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    },
-                                    "simultaneous": [
-                                        {
-                                            "key_code": "left_shift"
-                                        },
-                                        {
-                                            "key_code": "right_shift"
-                                        }
-                                    ]
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "caps_lock"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Tap ⌥ to Toggle Column Selection in VSCode",
                         "manipulators": [
                             {
@@ -383,6 +355,37 @@
                                 "to": [
                                     {
                                         "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'VIM profile'"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Press both Shift keys at the same time to toggle Caps Lock",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    },
+                                    "simultaneous": [
+                                        {
+                                            "key_code": "left_shift"
+                                        },
+                                        {
+                                            "key_code": "right_shift"
+                                        }
+                                    ]
+                                },
+                                "parameters": {
+                                    "basic.simultaneous_threshold_milliseconds": 25
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "caps_lock"
                                     }
                                 ],
                                 "type": "basic"

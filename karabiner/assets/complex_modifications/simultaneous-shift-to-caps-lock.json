@@ -25,7 +25,10 @@
               "key_code": "caps_lock"
             }
           ],
-          "type": "basic"
+          "type": "basic",
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 25
+          }
         }
       ]
     }
