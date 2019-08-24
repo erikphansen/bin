@@ -17,7 +17,8 @@ alias rmm "command rm"
 alias rrm "command rm"
 
 # ls better
-alias l "ls -halp"
+alias ls "lsd --group-dirs first"
+alias l "ls -hal"
 alias la "ls -aF"
 alias ld "ls -ld"
 alias ll "ls -l"
