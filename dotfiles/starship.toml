@@ -1,0 +1,19 @@
+# config for Starship prompt - https://starship.rs/
+# symlinked to ~/.config/starship.toml
+
+[directory]
+# fish_style_pwd_dir_length = 1
+# truncate_to_repo = true
+truncation_length = 4
+
+[git_branch]
+symbol = "🌱 "
+
+[git_status]
+package = "🐧"
+
+[nodejs]
+symbol = "🤖 "
+
+[package]
+symbol = "🐧 "

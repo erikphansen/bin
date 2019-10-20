@@ -16,3 +16,6 @@ source ~/bin/fish/init-rbenv.fish
 source ~/bin/fish/aliases.fish
 
 status --is-interactive; and source (nodenv init -|psub)
+
+# must `brew install starship` for this to work
+eval (starship init fish)
