@@ -11,6 +11,9 @@
 # set fish_color_param cyan
 # set fish_color_quote --italics green
 
+# this keeps getting reset for some reason, so I'm gonna set it with each new shell
+set -U Z_CMD j
+
 source ~/bin/fish/private.fish
 source ~/bin/fish/init-rbenv.fish
 source ~/bin/fish/aliases.fish
