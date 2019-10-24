@@ -11,6 +11,7 @@ symbol = "🌱 "
 
 [git_status]
 package = "🐧"
+show_sync_count = true
 
 [nodejs]
 symbol = "🤖 "
