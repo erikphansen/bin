@@ -7,14 +7,13 @@
 truncation_length = 4
 
 [git_branch]
-symbol = "🌱 "
+symbol = ""
 
 [git_status]
-package = "🐧"
 show_sync_count = true
 
 [nodejs]
-symbol = "🤖 "
+# symbol = "🤖 "
 
 [package]
-symbol = "🐧 "
+symbol = ""
