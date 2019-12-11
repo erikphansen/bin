@@ -126,6 +126,7 @@ alias fixtc "git status | grep typechange | awk '{print $2}' | xargs git checkou
 ####################
 alias ad "cd ~/adhoc"
 alias vw "cd ~/adhoc/vets-website"
+alias api "cd ~/adhoc/vets-api"
 # 1. Reset Docker without confirmation.
 # 2. Notify when `make rebuild` completes. (Install `noti` with `brew install noti`)
 # 3. Run `make up` to start up the API
