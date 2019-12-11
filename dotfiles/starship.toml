@@ -1,4 +1,4 @@
-# config for Starship prompt - https://starship.rs/
+# config for Starship prompt - https://starship.rs/config/
 # symlinked to ~/.config/starship.toml
 
 [directory]
@@ -8,6 +8,7 @@ truncation_length = 4
 
 [git_branch]
 symbol = ""
+truncation_length = 35
 
 [git_status]
 show_sync_count = true
