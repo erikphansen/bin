@@ -25,11 +25,11 @@ set -g __done_version 1.10.0
 function __done_get_focused_window_id
 	if type -q lsappinfo
 		lsappinfo info -only bundleID (lsappinfo front) | cut -d '"' -f4
-	else if test $SWAYSOCK
+	else if test -n "$SWAYSOCK"
 	and type -q jq
 		swaymsg --type get_tree | jq '.. | objects | select(.focused == true) | .id'
 	else if type -q xprop
-	and test $DISPLAY
+	and test -n "$DISPLAY"
 		xprop -root 32x '\t$0' _NET_ACTIVE_WINDOW | cut -f 2
 	end
 end
@@ -42,7 +42,7 @@ end
 
 function __done_is_process_window_focused
 	# Return false if the window is not focused
-	if test $__done_initial_window_id != (__done_get_focused_window_id)
+	if test "$__done_initial_window_id" != (__done_get_focused_window_id)
 		return 1
 	end
 	# If inside a tmux session, check if the tmux window is focused
@@ -56,7 +56,7 @@ function __done_is_process_window_focused
 end
 
 
-# verify that the system has graphical capabilites before initializing
+# verify that the system has graphical capabilities before initializing
 if test -z "$SSH_CLIENT"  # not over ssh
 and count (__done_get_focused_window_id) > /dev/null  # is able to get window id
 
@@ -72,7 +72,7 @@ and count (__done_get_focused_window_id) > /dev/null  # is able to get window id
 	function __done_ended --on-event fish_prompt
 		set -l exit_status $status
 
-		# backwards compatibilty for fish < v3.0
+		# backwards compatibility for fish < v3.0
 		set -q cmd_duration; or set -l cmd_duration $CMD_DURATION
 
 		if test $cmd_duration
