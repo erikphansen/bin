@@ -3,12 +3,15 @@
 
 [directory]
 # fish_style_pwd_dir_length = 1
-# truncate_to_repo = true
+truncate_to_repo = true
 truncation_length = 4
 
 [git_branch]
 symbol = ""
 truncation_length = 35
+
+[git_commit]
+disabled = true
 
 [git_status]
 show_sync_count = true
@@ -18,3 +21,6 @@ show_sync_count = true
 
 [package]
 symbol = ""
+
+[php]
+disabled = true
