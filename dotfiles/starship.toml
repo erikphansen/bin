@@ -1,6 +1,10 @@
 # config for Starship prompt - https://starship.rs/config/
 # symlinked to ~/.config/starship.toml
 
+[cmd_duration]
+min_time = 4_000
+show_milliseconds = true
+
 [directory]
 # fish_style_pwd_dir_length = 1
 truncate_to_repo = true
@@ -17,7 +21,7 @@ disabled = true
 show_sync_count = true
 
 [nodejs]
-# symbol = "🤖 "
+symbol = "🤖 "
 
 [package]
 symbol = ""

@@ -1,6 +1,9 @@
 # This file is sourced by ~/.config/fish/config.fish, so it basically acts as
 # the root startup file for a new fish session
 
+# Set the emoji width for iTerm
+# set -g fish_emoji_width 2
+
 set -g fish_color_autosuggestion --bold brblack
 set -g fish_color_cancel -r
 set -g fish_color_command blue
@@ -35,4 +38,4 @@ source ~/bin/fish/aliases.fish
 status --is-interactive; and source (nodenv init -|psub)
 
 # must `brew install starship` for this to work
-eval (starship init fish)
+starship init fish | source
