@@ -12,8 +12,10 @@ function pr -d 'Quickly make a PR of the current branch into `develop` or the br
   end
 
   set -l basebranch 'master'
+  set -l rest
   if count $argv > /dev/null
     set basebranch $argv[1]
+    set rest $argv[2..-1]
     # set -e $argv[1] # this doesn't delete the first item of args
   end
   set -l headbranch (git rev-parse --abbrev-ref HEAD)
@@ -21,7 +23,7 @@ function pr -d 'Quickly make a PR of the current branch into `develop` or the br
   git push -u
   echo ''
   echo Using `hub` to make a PR from `{$headbranch}` into `{$basebranch}`...
-  set pr_url (hub pull-request $argv[2] -b $basebranch -F pr_message.txt)
+  set pr_url (hub pull-request -b $basebranch $rest --file pr_message.txt)
 
   # delete the temp file using the built in `rm` not my `rm` alias to keep from polluting the macOS trashcan
   command rm pr_message.txt
