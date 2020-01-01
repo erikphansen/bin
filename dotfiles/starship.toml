@@ -2,8 +2,8 @@
 # symlinked to ~/.config/starship.toml
 
 [cmd_duration]
-min_time = 4_000
-show_milliseconds = true
+min_time = 5_000
+show_milliseconds = false
 
 [directory]
 # fish_style_pwd_dir_length = 1
