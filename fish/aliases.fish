@@ -121,6 +121,9 @@ alias tp "touch todo.taskpaper; and open -a 'Taskpaper' todo.taskpaper"
 # git status telling you files have `typechange`s?
 alias fixtc "git status | grep typechange | awk '{print $2}' | xargs git checkout"
 
+# reset display brightness levels
+alias bb "brightness -d 1 .625; and brightness -d 0 .5"
+
 ####################
 #  AdHoc specific  #
 ####################
