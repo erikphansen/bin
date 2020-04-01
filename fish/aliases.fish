@@ -134,6 +134,7 @@ alias api "cd ~/adhoc/vets-api"
 # 2. Notify when `make rebuild` completes. (Install `noti` with `brew install noti`)
 # 3. Run `make up` to start up the API
 alias rebuild-api "docker system prune -f; and noti make rebuild; and make up"
+alias va-issues "gh issue list -a erikphansen -R department-of-veterans-affairs/va.gov-team"
 
 # use noti to post a local notification for these long-running events
 alias gifify "noti gifify"
