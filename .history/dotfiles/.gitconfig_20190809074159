@@ -11,6 +11,7 @@
   aa = add .
   dt = difftool
   ri = rebase -i
+  rid = rebase -i develop
   rim = rebase -i master
   graph = log --all --decorate --oneline --graph --date=relative
   graph2 = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%ae>%Creset' --abbrev-commit --date=relative
@@ -24,9 +25,6 @@
 	excludesfile = ~/.gitignore_global
   autocrlf = input
   editor = vim
-  pager = delta --dark
-[interactive]
-  diffFilter = delta --plus-color "#012800" --minus-color "#340001"
 [difftool]
   prompt = false
 [difftool "sourcetree"]

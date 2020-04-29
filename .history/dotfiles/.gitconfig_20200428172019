@@ -24,9 +24,9 @@
 	excludesfile = ~/.gitignore_global
   autocrlf = input
   editor = vim
-  pager = delta --dark
+  pager = delta --plus-color="#012800" --minus-color="#340001"
 [interactive]
-  diffFilter = delta --plus-color "#012800" --minus-color "#340001"
+  # diffFilter = delta --plus-color "#012800" --minus-color "#340001"
 [difftool]
   prompt = false
 [difftool "sourcetree"]
