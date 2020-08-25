@@ -24,9 +24,24 @@
 	excludesfile = ~/.gitignore_global
   autocrlf = input
   editor = vim
-  pager = delta --dark
+  pager = delta
+[delta]
+  features = side-by-side line-numbers decorations
+  syntax-theme = Dracula
+  plus-style = syntax bold "#006000"
+  minus-style = syntax bold "#600000"
+[delta "decorations"]
+  commit-decoration-style = bold yellow box ul
+  file-style = bold yellow ul
+  file-decoration-style = none
+  hunk-header-decoration-style = cyan box ul
+[delta "line-numbers"]
+  line-numbers-left-style = cyan
+  line-numbers-right-style = cyan
+  line-numbers-minus-style = 124
+  line-numbers-plus-style = 28
 [interactive]
-  diffFilter = delta --plus-color "#012800" --minus-color "#340001"
+  diffFilter = delta --color-only
 [difftool]
   prompt = false
 [difftool "sourcetree"]
@@ -51,6 +66,8 @@
   tool = Kaleidoscope
 [push]
   default = current
+[pull]
+  rebase = false
 [filter "lfs"]
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
