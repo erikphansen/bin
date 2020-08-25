@@ -15,21 +15,28 @@ disabled = false
 
 [env_var]
 variable = "CHOMA_SEED"
-style = "bold black"
-symbol = "🌱"
+style = "bold green"
+symbol = " "
 
 [git_branch]
-# symbol = ""
+symbol = " "
 truncation_length = 35
 
 [git_commit]
-# disabled = true
+prefix = "ﰖ"
+suffix = " "
 
 [git_status]
 show_sync_count = true
+prefix = ""
+suffix = " "
+stashed = "📦 "
+modified = "✏️ "
+deleted = "❌ "
+untracked = "❓ "
 
 [nodejs]
-symbol = "🤖 "
+symbol = " "
 
 [package]
 symbol = ""
