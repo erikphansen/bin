@@ -23,23 +23,14 @@ symbol = " "
 truncation_length = 35
 
 [git_commit]
-prefix = "ﰖ"
-suffix = " "
+# prefix = "ﰖ"
+# suffix = " "
+format = '[ﰖ$hash]($style) '
 
 [git_status]
-show_sync_count = true
-prefix = ""
-suffix = " "
-stashed = "📦 "
-modified = "✏️ "
-deleted = "❌ "
-untracked = "❓ "
 
 [nodejs]
-symbol = " "
-
-[package]
-symbol = ""
+symbol = " "
 
 [php]
 disabled = true
