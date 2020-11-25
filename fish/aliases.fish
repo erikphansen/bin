@@ -135,6 +135,10 @@ alias api "cd ~/adhoc/vets-api"
 # 3. Run `make up` to start up the API
 alias rebuild-api "docker system prune -f; and noti make rebuild; and make up"
 alias va-issues "gh issue list -a erikphansen -R department-of-veterans-affairs/va.gov-team"
+# Added the following functions that only run when in the vets-website repo:
+# w - yarn install; and yarn watch
+# tu - yarn test:unit (and supports passing in a path to spec(s) to run)
+# cy - yarn cy:open
 
 # use noti to post a local notification for these long-running events
 alias gifify "noti gifify"
