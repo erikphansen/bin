@@ -35,7 +35,6 @@ alias e "code"
 # alias e "mate"
 # alias e "subl"
 # alias e "atom"
-alias e. "e ."
 alias ee "e ."
 # alias tt "gittower ." # Tower
 # alias tt "stree ." # SourceTree
