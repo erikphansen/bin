@@ -1,0 +1,40 @@
+{
+  "title": "Hyper+ASDF = Modifiers",
+  "rules": [
+    {
+      "description": "Hyper + ASDF | ⇧ ⌃ ⌥ ⌘",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "left_shift",
+                "left_control",
+                "left_option",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_shift"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_shift",
+                "left_control",
+                "left_option",
+                "left_command"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
