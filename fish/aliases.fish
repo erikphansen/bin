@@ -121,6 +121,8 @@ alias tp "touch todo.taskpaper; and open -a 'Taskpaper' todo.taskpaper"
 alias fixtc "git status | grep typechange | awk '{print $2}' | xargs git checkout"
 
 # reset display brightness levels
+# Turns out it was a bad Thunderbolt cable that was casuing my monitor to go to
+# 100% brightness after plugging in my laptop.
 alias bb "brightness -d 1 .625; and brightness -d 0 .5"
 
 ####################
