@@ -30,15 +30,17 @@ alias cat "bat"
 alias less "bat"
 alias c "cat"
 
-# apps
+# my editor
 alias e "code"
 # alias e "mate"
 # alias e "subl"
 # alias e "atom"
 alias ee "e ."
+
+# my git gui
+alias tt "fork status" # Open current repo in Fork's commit view
 # alias tt "gittower ." # Tower
 # alias tt "stree ." # SourceTree
-alias tt "fork status" # Open current repo in Fork's commit view
 
 # common directories
 alias aps "cd ~/Library/Application\ Support"
@@ -48,7 +50,6 @@ alias desk "cd ~/Desktop"
 alias down "cd ~/Downloads"
 alias kar "cd ~/Dropbox/karabiner; and e . core.xml"
 alias p "cd ~/projects"
-alias pp "cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User; and subl ."
 alias work "cd ~/projects-work"
 
 # git helpers
@@ -62,7 +63,7 @@ alias gcm "git commit -v -m" # usage: gcm 'this is my commit message'
 alias gco "git checkout"
 alias gd "git checkout develop"
 alias gdd "git diff"
-alias gf "git fetch; and git remote prune origin"
+alias gf "git fetch; and git remote prune origin; and prune-branches"
 alias gfd "gf; and grod"
 alias gff "git fetch"
 alias gfr "gf; and grom"
@@ -74,15 +75,16 @@ alias grm "git rebase master"
 alias grod "git rebase origin/develop"
 alias grom "git rebase origin/master"
 alias gs "git status"
-alias pull "git pull; and git remote prune origin"
+alias pull "git pull; and git remote prune origin; and prune-branches"
 alias push "git push"
 
 # helpers
+# TODO: is it possible to force delete the last entry so I don't need to confirm which history entry I want to delete?
 alias doh "history delete (history -n 1 | tr -s ' ' \n)"
+alias oops "history delete (history -n 1 | tr -s ' ' \n)"
 alias h "history"
 alias hd "history delete"
 alias me "echo (whoami)@(hostname)"
-alias oops "history delete (history -n 1 | tr -s ' ' \n)"
 alias ax "chmod a+x"
 # Reset Finder view settings
 alias refreshfinder "sudo find / -name .DS_Store -delete; killall Finder"
