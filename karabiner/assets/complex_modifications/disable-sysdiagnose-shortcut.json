@@ -1,0 +1,29 @@
+{
+  "title": "Disable ⌃⌥⇧⌘. sysdiagnose-generation shortcut",
+  "rules": [
+    {
+      "description": "Disable sysdiagnose shortcut",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "period",
+            "modifiers": {
+              "mandatory": [
+                "left_control",
+                "left_shift",
+                "left_option",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "none"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}
