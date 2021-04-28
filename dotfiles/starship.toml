@@ -1,14 +1,89 @@
 # config for Starship prompt - https://starship.rs/config/
 # symlinked to ~/.config/starship.toml
 
+format = """
+$cmd_duration\
+$time\
+$line_break\
+$username\
+$hostname\
+$shlvl\
+$kubernetes\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$hg_branch\
+$docker_context\
+$package\
+$cmake\
+$dart\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$golang\
+$helm\
+$java\
+$julia\
+$kotlin\
+$nim\
+$nodejs\
+$ocaml\
+$perl\
+$php\
+$purescript\
+$python\
+$ruby\
+$rust\
+$swift\
+$terraform\
+$vagrant\
+$zig\
+$nix_shell\
+$conda\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$env_var\
+$crystal\
+$custom\
+$line_break\
+$lua\
+$jobs\
+$battery\
+$status\
+$character"""
+
+[character]
+# success_symbol = "[❯](bold green)"
+# success_symbol = "[](bold green)"
+success_symbol = "⚡️"
+
+# error_symbol = "[❯](bold red)"
+# error_symbol = "🧨"
+error_symbol = "💥"
+
 [cmd_duration]
 min_time = 5_000
 show_milliseconds = false
+style = "fg:bright-black"
+format = "[祥$duration |]($style) "
 
 [directory]
 # fish_style_pwd_dir_length = 1
+# home_symbol = "🏠"
 truncate_to_repo = true
-truncation_length = 4
+# truncation_symbol = "✨ "
+truncation_length = 3
+
+[directory.substitutions]
+# "~/Downloads" = "📥 "
+# "~" = "🏠"
+# "🏠/Downloads" = "📥 "
+# "🏠/Desktop" = "🖥 "
 
 [docker_context]
 disabled = false
@@ -17,15 +92,15 @@ disabled = false
 variable = "CHOMA_SEED"
 style = "bold green"
 symbol = " "
+format = "with [$symbol$env_value]($style) "
 
 [git_branch]
 symbol = " "
-truncation_length = 35
+truncation_length = 30
+format = "[$symbol$branch]($style) "
 
 [git_commit]
-# prefix = "ﰖ"
-# suffix = " "
-format = '[ﰖ$hash]($style) '
+format = "[ﰖ$hash]($style) "
 
 [git_status]
 ahead = "⇡${count}"
@@ -34,11 +109,81 @@ behind = "⇣${count}"
 
 [nodejs]
 symbol = " "
+format = "[$symbol($version)]($style) "
+
+[package]
+format = "[$symbol($version)]($style) "
+# display_private = true
 
 [php]
 disabled = true
 
+[ruby]
+symbol = " "
+format = "[$symbol($version)]($style) "
+
+[status]
+disabled = false
+
 [time]
 disabled = false
-style = "black"
-use_12hr = true
+style = "fg:bright-black"
+use_12hr = false
+format = "[$time]($style) "
+
+# Default prompt format, as of v0.50.0
+# Which is equivalent to
+# format = """
+# $username\
+# $hostname\
+# $shlvl\
+# $kubernetes\
+# $directory\
+# $git_branch\
+# $git_commit\
+# $git_state\
+# $git_status\
+# $hg_branch\
+# $docker_context\
+# $package\
+# $cmake\
+# $dart\
+# $dotnet\
+# $elixir\
+# $elm\
+# $erlang\
+# $golang\
+# $helm\
+# $java\
+# $julia\
+# $kotlin\
+# $nim\
+# $nodejs\
+# $ocaml\
+# $perl\
+# $php\
+# $purescript\
+# $python\
+# $ruby\
+# $rust\
+# $swift\
+# $terraform\
+# $vagrant\
+# $zig\
+# $nix_shell\
+# $conda\
+# $memory_usage\
+# $aws\
+# $gcloud\
+# $openstack\
+# $env_var\
+# $crystal\
+# $custom\
+# $cmd_duration\
+# $line_break\
+# $lua\
+# $jobs\
+# $battery\
+# $time\
+# $status\
+# $character"""
