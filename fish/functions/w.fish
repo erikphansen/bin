@@ -5,5 +5,5 @@ function w -d 'install deps and start up vets-website'
     return
   end
 
-  yarn install; and yarn watch --open false
+  yarn install; and yarn watch
 end
