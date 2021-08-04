@@ -75,8 +75,11 @@ alias grm "git rebase master"
 alias grod "git rebase origin/develop"
 alias grom "git rebase origin/master"
 alias gs "git status"
-alias pull "git pull; and git remote prune origin; and prune-branches"
+alias pull "git pull; and git remote prune origin"
+# alias pull "git pull; and git remote prune origin; and prune-branches"
 alias push "git push"
+alias b "git checkout"
+alias bb "git checkout -b"
 
 # helpers
 # TODO: is it possible to force delete the last entry so I don't need to confirm which history entry I want to delete?
@@ -125,7 +128,7 @@ alias fixtc "git status | grep typechange | awk '{print $2}' | xargs git checkou
 # reset display brightness levels
 # Turns out it was a bad Thunderbolt cable that was casuing my monitor to go to
 # 100% brightness after plugging in my laptop.
-alias bb "brightness -d 1 .625; and brightness -d 0 .5"
+# alias bb "brightness -d 1 .625; and brightness -d 0 .5"
 
 ####################
 #  AdHoc specific  #
