@@ -24,7 +24,12 @@
 	excludesfile = ~/.gitignore_global
   autocrlf = input
   editor = vim
-  pager = delta
+[pager]
+  diff = delta
+  show = delta
+  log = delta
+  blame = delta
+  reflog = delta
 [delta]
   features = side-by-side line-numbers decorations
   syntax-theme = Dracula
